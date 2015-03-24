@@ -22,7 +22,7 @@ categories:
 
 [Violent Cases][8], Neil Gaiman and Dave McKean
 
-<a href="http://en.wikipedia.org/wiki/Surely\_You" re\_joking>Surely You&#8217;re Joking, Mr Feynman!</a>, Richard P. Feynman
+<a href="http://en.wikipedia.org/wiki/Surely\_You" re\_joking>Surely You're Joking, Mr Feynman!</a>, Richard P. Feynman
 
  [1]: http://www.gigamonkeys.com/book/
  [2]: http://en.wikipedia.org/wiki/DMZ_(DC_Comics)

@@ -51,7 +51,7 @@ console.log(blah); // Option 1: ReferenceError: blah is not defined
                    // Option 2: print 'blah' to the console
 </pre>
 
-`blah` will be printed. It doesn&#8217;t matter that `blah` was declared in a different file. All files in JavaScript are loaded into a shared scope.
+`blah` will be printed. It doesn't matter that `blah` was declared in a different file. All files in JavaScript are loaded into a shared scope.
 
 ### Three
 
@@ -63,7 +63,7 @@ console.log(blah); // Option 1: ReferenceError: blah is not defined
                    // Option 2: print 'blah' to the console
 </pre>
 
-`blah` will be printed. It doesn&#8217;t matter that the `var` keyword was used to declare `blah`. The declaration was in a shared scope, and that scope is global, so `blah` becomes a global variable.
+`blah` will be printed. It doesn't matter that the `var` keyword was used to declare `blah`. The declaration was in a shared scope, and that scope is global, so `blah` becomes a global variable.
 
 ### Four
 
@@ -92,7 +92,7 @@ console.log(blah); // Option 1: ReferenceError: blah is not defined
                    // Option 2: print 'blah' to the console
 </pre>
 
-There will be a reference error. The `blah` variable is created inside a function, in the function&#8217;s own, private scope. It is not available in the global scope.
+There will be a reference error. The `blah` variable is created inside a function, in the function's own, private scope. It is not available in the global scope.
 
 ### Six
 
@@ -170,7 +170,7 @@ To do this, it made an empty object, `Blah`, and attached `blahFn` to it as an a
 
 What is printed? `woo` or `boo`?
 
-It&#8217;s `boo`. The code in `a.js` makes a function called `woo` and does nothing with it.
+It's `boo`. The code in `a.js` makes a function called `woo` and does nothing with it.
 
 In questions seven and eight, both modules were preceded by a semicolon. Why is this?
 

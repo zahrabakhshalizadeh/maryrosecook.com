@@ -10,7 +10,7 @@ Last Saturday, I went to [Rewired State][1], a hackday where people made useful 
 
 I did an app called [Voxpomp][2] that lets you search statements made by MPs in Parliament and then cross-reference the results with the news stories of the time.
 
-It was a great day &#8211; lots of nice people and interesting conversations. I would love to see a Dewired State that was about using technology to let people build their own data sources and communities away from the government.
+It was a great day - lots of nice people and interesting conversations. I would love to see a Dewired State that was about using technology to let people build their own data sources and communities away from the government.
 
 You can see all the hacks on the [Rewired State project page][3]. My favourites were:
 

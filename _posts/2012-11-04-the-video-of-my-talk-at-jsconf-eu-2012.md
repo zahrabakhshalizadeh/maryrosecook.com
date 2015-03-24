@@ -6,3 +6,5 @@ permalink: /post/the-video-of-my-talk-at-jsconf-eu-2012
 categories:
   - Uncategorized
 ---
+
+<iframe width="600" height="338" src="http://www.youtube.com/embed/qDZ5Ku6whi0?rel=0" frameborder="0" allowfullscreen></iframe>

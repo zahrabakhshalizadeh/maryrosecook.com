@@ -8,7 +8,7 @@ categories:
 ---
 [Little Lisp][1] is an interpreter that supports function invocation, lambdas, lets, ifs, numbers, strings, a few library functions, and lists. I wrote it for a lightning talk at [Hacker School][2] to show how easy it is to write an interpreter. The [code][1] is 116 lines of JavaScript. I will explain how it works.
 
-First, let&#8217;s learn some Lisp.
+First, let's learn some Lisp.
 
 An atom, the simplest Lisp form:
 
@@ -277,7 +277,7 @@ Line 3 of `interpretList()` gets called, because `lambda`, the first element in 
 
 `special.lambda()` takes the part of the input that defines the lambda. It returns a function that, when invoked, invokes the lambda on some arguments.
 
-Line 3 begins the definition of the lambda invocation function. Line 4 stores the arguments passed to the lambda invocation. Line 5 starts creating a new scope for the lambda&#8217;s invocation. It reduces over the part of the input that defines the parameters of the lambda: `[{ type: 'identifier', value: 'x' }]`. It adds a key/value pair to the lambda scope for each lambda parameter in `input` and argument passed to the lambda. Line 10 invokes the lambda by calling `interpret()` on the lambda body: `{ type: 'identifier', value: 'x' }`. It passes in the lambda context that contains the lambda&#8217;s scope and the parent context.
+Line 3 begins the definition of the lambda invocation function. Line 4 stores the arguments passed to the lambda invocation. Line 5 starts creating a new scope for the lambda's invocation. It reduces over the part of the input that defines the parameters of the lambda: `[{ type: 'identifier', value: 'x' }]`. It adds a key/value pair to the lambda scope for each lambda parameter in `input` and argument passed to the lambda. Line 10 invokes the lambda by calling `interpret()` on the lambda body: `{ type: 'identifier', value: 'x' }`. It passes in the lambda context that contains the lambda's scope and the parent context.
 
 The lambda is now represented by the function returned by `special.lambda()`.
 
@@ -346,7 +346,7 @@ Line 6 of `interpret()` finds that `input` is an identifier atom. Line 7 looks u
 };
 </pre>
 
-`'Lisp'` is returned by the lambda invocation function, which is returned by `interpretList()`, which is returned by `interpret()`, and that&#8217;s it.
+`'Lisp'` is returned by the lambda invocation function, which is returned by `interpretList()`, which is returned by `interpret()`, and that's it.
 
 Go to the [GitHub repository][1] to see all the code. And look at [lis.py][3], the dazzlingly simple Scheme interpreter that Peter Norvig wrote in Python.
 

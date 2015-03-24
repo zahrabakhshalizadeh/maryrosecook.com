@@ -1,5 +1,5 @@
 ---
-title: 'What I&#8217;ve been working on'
+title: What I've been working on
 author: maryrosecook
 layout: post
 permalink: /post/what-ive-been-working-on

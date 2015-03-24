@@ -10,6 +10,6 @@ I live in London now, but I used to live in Leeds. When I was there, I was heavi
 
 I had really high expectations, because brutal music seems one of the few genre-spanning genres. Many people into death metal also like breakcore. Many people into gabba also like hard-core.
 
-Hardly anyone came. And I&#8217;ve always hoped that someone else would give it a go and maybe do it better than us and make it work.
+Hardly anyone came. And I've always hoped that someone else would give it a go and maybe do it better than us and make it work.
 
  [1]: http://www.thecommonplace.org.uk

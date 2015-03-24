@@ -8,17 +8,17 @@ categories:
 ---
 Tests are pieces of code that check if your main code works. I write tests to catch bugs when I refactor. I write tests to force myself to think through and handle edge cases. I write tests to show the users of my project that my code does what I say it does.
 
-For this essay, I will describe the code and tests for a tiny web app that draws a blue sky if it&#8217;s day time.
+For this essay, I will describe the code and tests for a tiny web app that draws a blue sky if it's day time.
 
 <img src="/images/bluesky.png" width="600" height="100" />
 
-And a black sky if it&#8217;s night time.
+And a black sky if it's night time.
 
 <img src="/images/blacksky.png" width="600" height="100" />
 
 I will describe all the code I wrote. The web app. The microscopic testing framework. The tests for the client side code. The mocks that fake layers of the web app and technologies that are not pertinent. The tests that use these mocks. The refactored code that simplifies the mocks by dividing the web app code into different pieces that have single responsibilites.
 
-Along the way, I will talk about many fun things. Temporarily patching libraries written by other people. Writing code that pretends to be the internet. Making Ajax requests by hand. Writing a little web server. Examining a function to find out how many arguments it expects. Making asynchronous blocks of code run serially so they don&#8217;t tread on each other&#8217;s toes.
+Along the way, I will talk about many fun things. Temporarily patching libraries written by other people. Writing code that pretends to be the internet. Making Ajax requests by hand. Writing a little web server. Examining a function to find out how many arguments it expects. Making asynchronous blocks of code run serially so they don't tread on each other's toes.
 
 ### The code
 
@@ -66,7 +66,7 @@ The bound function grabs the drawing context for the canvas element. It parses `
 
 Below is the server-side JavaScript. It is run in [Node.js][2]. Near the bottom, the code uses the Node HTTP module to create a web server. It specfies that every web request should be handled by `requestHandler()`. Each time this function is called, Node passes it a `request` object that has the URL that was requested, and a `response` object that can be used to send data back to the client.
 
-If the client requested `"/"`, the root, the `index.html` file is read from disk and its contents are sent back to be displayed in the user&#8217;s browser. If `"/time.json"` was requested, the server looks up the time, creates a piece of JSON that looks something like `{ "time": "day" }` and sends it back to the user&#8217;s web browser.
+If the client requested `"/"`, the root, the `index.html` file is read from disk and its contents are sent back to be displayed in the user's browser. If `"/time.json"` was requested, the server looks up the time, creates a piece of JSON that looks something like `{ "time": "day" }` and sends it back to the user's web browser.
 
 <pre class="prettyprint">var http = require("http");
 var fs = require("fs");

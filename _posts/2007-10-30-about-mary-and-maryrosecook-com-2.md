@@ -22,11 +22,11 @@ If you like even one of these bands, check them all out: [Heavens To Betsy][6], 
 
 The same might not be true for these books: [Love And Death And Other Disasters][21], [The Secret History][22], [V For Vendetta][23], [Stirfry][24], [Tipping The Velvet][25], [Frog And Toad][26], [1984][27], [Gifts Of The Body][28], [The Eighteenth Emergency][29], [Goodbye To Berlin][30], [Rotary Spokes][31], [Potential][32], [The Scarecrows][33], [The Lost Garden][34].
 
-Or these films: [Heat][35], [When Night Is Falling][36], [Goodfellas][37], [Serpico][38], [Dog Day Afternoon][39], [Swingers][40], [Bound][41], [The Thin Red Line][42], [Go Fish][43], [The Insider][44], [L&#8217;Auberge Espagnole][45], [Betrayal][46], [Sneakers][47], [Malcolm X][48].
+Or these films: [Heat][35], [When Night Is Falling][36], [Goodfellas][37], [Serpico][38], [Dog Day Afternoon][39], [Swingers][40], [Bound][41], [The Thin Red Line][42], [Go Fish][43], [The Insider][44], [L'Auberge Espagnole][45], [Betrayal][46], [Sneakers][47], [Malcolm X][48].
 
 **Technology**
 
-Hosting: [TextDrive][49]. A bit flaky when it comes to uptime. Good for Rails, but one can&#8217;t help feeling that the Official Rails Host should be able to make it a bit easier to deploy your application.
+Hosting: [TextDrive][49]. A bit flaky when it comes to uptime. Good for Rails, but one can't help feeling that the Official Rails Host should be able to make it a bit easier to deploy your application.
 
 Diary software: custom [Ruby][50] on [Rails][51] application written in a couple of days.
 

@@ -6,7 +6,7 @@ permalink: /post/calculating-whether-to-help-the-man-beside-me-on-the-train-who-
 categories:
   - Uncategorized
 ---
-Some friends and I were talking about delays on The London Underground. Someone rather heartless was complaining about the people who choose to throw themselves onto the tracks at rush hour. We got to talking about delays that result from, &#8220;A person being taken ill on a train.&#8221; From there, we started doing calculations to determine whether it was more utilitarian to let someone die than delay thousands of people&#8217;s journeys.
+Some friends and I were talking about delays on The London Underground. Someone rather heartless was complaining about the people who choose to throw themselves onto the tracks at rush hour. We got to talking about delays that result from, "A person being taken ill on a train." From there, we started doing calculations to determine whether it was more utilitarian to let someone die than delay thousands of people's journeys.
 
 Assumptions:
 

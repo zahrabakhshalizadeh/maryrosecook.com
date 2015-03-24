@@ -6,7 +6,7 @@ permalink: /post/using-cron-with-rails-on-slicehost-2
 categories:
   - Uncategorized
 ---
-I need to run a model method on my Slicehost production app every hour. I tried rake+cron, cronedit and a number of nut.crack(sledgehammer) queueing server solutions. Some didn&#8217;t work and the rest were unreliable. Therefore, for all you Ruby On Rails On Slicehost people, here is my approach. Treasure it.
+I need to run a model method on my Slicehost production app every hour. I tried rake+cron, cronedit and a number of nut.crack(sledgehammer) queueing server solutions. Some didn't work and the rest were unreliable. Therefore, for all you Ruby On Rails On Slicehost people, here is my approach. Treasure it.
 
 1. ssh into your Slicehost account.
 
@@ -24,7 +24,7 @@ I need to run a model method on my Slicehost production app every hour. I tried 
 
 8. Here is what I entered into my crontab. When you write your own version, make sure that the paths reflect where you have stored ruby and your app, and that you fill in the blank for your app name and set your own timings. `1 1 * * * cd /home/admin/public_html/[your app name]/current && /usr/local/bin/ruby script/runner -e production 'Match.generate_and_save_matches' > ~/cronlogs/notifications.log`
 
-8a. It is a good idea to test the command you enter (minus the scheduling information) in your command line. If it doesn&#8217;t work there, it won&#8217;t work when run by cron, either. 
+8a. It is a good idea to test the command you enter (minus the scheduling information) in your command line. If it doesn't work there, it won't work when run by cron, either. 
 
 9. If you try and save your crontab and it says you have errors, make sure the whole thing is on one line.
 

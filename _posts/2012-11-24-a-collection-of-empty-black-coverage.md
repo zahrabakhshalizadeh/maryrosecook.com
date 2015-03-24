@@ -8,7 +8,7 @@ categories:
 ---
 Press coverage of my latest game:
 
-[Kill Screen][1], [PC Gamer][2], [Chrome Experiments][3], [Reddit][4], [Indie Games][5], [The Next Web][6], [Creative Applications][7], [AQNB][8], [Kongregate][9], [JS.gd][10], [Bonte Games][11], [HTML5Games.com][12], [HTML5Games.net][13], [I Can Has Cheezeburger][14], [Ecrans][15], [Bart Bonte&#8217;s best browser games of 2012][16].
+[Kill Screen][1], [PC Gamer][2], [Chrome Experiments][3], [Reddit][4], [Indie Games][5], [The Next Web][6], [Creative Applications][7], [AQNB][8], [Kongregate][9], [JS.gd][10], [Bonte Games][11], [HTML5Games.com][12], [HTML5Games.net][13], [I Can Has Cheezeburger][14], [Ecrans][15], [Bart Bonte's best browser games of 2012][16].
 
  [1]: http://killscreendaily.com/articles/interviews/conversation-mary-rose-cook-indie-developer-no-patience-indie-games/
  [2]: http://www.pcgamer.com/2012/09/21/the-free-webgame-round-up-3/

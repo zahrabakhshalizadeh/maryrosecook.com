@@ -8,34 +8,34 @@ categories:
 ---
 I have spent the last six weeks writing a music recommendation engine, theperceptron.com It was fun.
 
-**From the user&#8217;s perspective:**
+**From the user's perspective:**
 
   1. Enter a band you like.
   2. Get recommendations for other bands you might also like.
   3. Test out the artists recommended by visiting their Myspaces and websites, reading their Wikipedia summaries and listening to sample tracks.
   4. Say whether you like or dislike your recommended bands.
   5. Add promising bands to your playlist so you can listen later.
-  6. Suggest an artist or two that the site didn&#8217;t recommended.
+  6. Suggest an artist or two that the site didn't recommended.
   7. Get on with your life.
 
-**From the code&#8217;s perspective:**
+**From the code's perspective:**
 
 Recommendations are made based on connections between artists. These connections are found in data taken from the internet:
 
   * Recommendations made by actual humans: tinymixtapes.com and epitonic.com and users of the perceptron.
-  * Artist admiration: artists&#8217; top friends on Myspace.
+  * Artist admiration: artists' top friends on Myspace.
   * Artists on the same mixtape: muxtape.com
   * Artists on the same record label: wikipedia.org
   * Artists posted to the same mp3 blog: hypem.com
   * Artists who have played gigs together: myspace.com
 
-Each rating action that a user can perform on a recommended artist &#8211; liking or disliking, visiting websites, listening to songs or adding them to the playlist &#8211; is associated with a certain number of points. These points are used in two ways. First, each source has a running total of points given to the recommendations made by the source. Second, each artist connection has a running total of the number of points it has accrued.
+Each rating action that a user can perform on a recommended artist - liking or disliking, visiting websites, listening to songs or adding them to the playlist - is associated with a certain number of points. These points are used in two ways. First, each source has a running total of points given to the recommendations made by the source. Second, each artist connection has a running total of the number of points it has accrued.
 
-Recommendations are given a score based upon these point totals. Ignoring the weightings of the source and connection score, a recommendation&#8217;s score is calculated thus:
+Recommendations are given a score based upon these point totals. Ignoring the weightings of the source and connection score, a recommendation's score is calculated thus:
 
 *score = (source\_points + connection\_points) / num\_source\_connections*
 
-the perceptron&#8217;s algorithm is pretty obvious. What makes the site good is the choice of data sources. However, the algorithm does allow experimentation with adding data sources. If I add a bad one, the scores given to its recommendations drop very rapidly. It only took about 200 user rating actions to get the site&#8217;s data source weights pretty good. Here is the current table (higher numbers are better):
+the perceptron's algorithm is pretty obvious. What makes the site good is the choice of data sources. However, the algorithm does allow experimentation with adding data sources. If I add a bad one, the scores given to its recommendations drop very rapidly. It only took about 200 user rating actions to get the site's data source weights pretty good. Here is the current table (higher numbers are better):
 
 <table class="admin_table">
   <tr>
@@ -124,7 +124,7 @@ the perceptron&#8217;s algorithm is pretty obvious. What makes the site good is 
     </td>
     
     <td class="admin_table_td">
-      Score hasn&#8217;t settled, yet.
+      Score hasn't settled, yet.
     </td>
   </tr>
   
@@ -134,7 +134,7 @@ the perceptron&#8217;s algorithm is pretty obvious. What makes the site good is 
     </td>
     
     <td class="admin_table_td">
-      Score hasn&#8217;t settled, yet.
+      Score hasn't settled, yet.
     </td>
   </tr>
 </table>

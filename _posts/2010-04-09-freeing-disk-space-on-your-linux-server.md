@@ -14,7 +14,7 @@ To find out where disk space is being used:
 2. Run `sudo du -h --max-depth=1`  
 3. Note which directories are using a lot of disk space.  
 4. `cd` into one of the big directories.  
-5. Run `ls -l` to see which files are using a lot of space. Delete any you don&#8217;t need.  
+5. Run `ls -l` to see which files are using a lot of space. Delete any you don't need.  
 6. Repeat steps 2 to 5.
 
  [1]: http://slicehost.com

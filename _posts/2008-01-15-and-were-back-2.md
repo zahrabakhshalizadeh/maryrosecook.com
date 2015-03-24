@@ -1,5 +1,5 @@
 ---
-title: 'And, we&#8217;re back'
+title: And, we're back
 author: maryrosecook
 layout: post
 permalink: /post/and-were-back-2

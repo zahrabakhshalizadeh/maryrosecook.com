@@ -14,11 +14,11 @@ The most recent vaguely stable version will always be available at [pistolslut.c
 
 ### Framework
 
-I use [The Render Engine][6] by Brett Fattori. It&#8217;s a fabulous framework that handles the basics of rendering graphics and sprites to the Canvas element, moving objects, collision detection, animation and level loading.
+I use [The Render Engine][6] by Brett Fattori. It's a fabulous framework that handles the basics of rendering graphics and sprites to the Canvas element, moving objects, collision detection, animation and level loading.
 
 ### Code
 
-The Pistol Slut [code][7] is open source and available on GitHub. It would be a good reference for anyone who wants to learn about advanced capabilities of The Render Engine that aren&#8217;t covered in the demos that come with the framework: animated sprites, level object loading and enemies.
+The Pistol Slut [code][7] is open source and available on GitHub. It would be a good reference for anyone who wants to learn about advanced capabilities of The Render Engine that aren't covered in the demos that come with the framework: animated sprites, level object loading and enemies.
 
 ### Features so far
 

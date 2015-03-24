@@ -11,7 +11,7 @@ Source: [xkcd comic 303][2]
 
 In my dynamic, Ruby-infused world, the Compiling Defence is disappointingly impotent.
 
-However, since I began using [Capistrano][3] on [Joyent][4] shared servers, I have found an even better defence: &#8220;Deploying!&#8221;
+However, since I began using [Capistrano][3] on [Joyent][4] shared servers, I have found an even better defence: "Deploying!"
 
  [1]: http://imgs.xkcd.com/comics/compiling.png
  [2]: http://xkcd.com/303/

@@ -14,9 +14,9 @@ The examples are in Python, because many people find Python easy to read. A numb
 
 ### A guide rope
 
-When people talk about functional programming, they mention a dizzying number of &#8220;functional&#8221; characteristics. They mention immutable data<sup>1</sup>, first class functions<sup>2</sup> and tail call optimisation<sup>3</sup>. These are language features that aid functional programming. They mention mapping, reducing, pipelining, recursing, currying<sup>4</sup> and the use of higher order functions. These are programming techniques used to write functional code. They mention parallelization<sup>5</sup>, lazy evaluation<sup>6</sup> and determinism<sup>7</sup>. These are advantageous properties of functional programs.
+When people talk about functional programming, they mention a dizzying number of "functional" characteristics. They mention immutable data<sup>1</sup>, first class functions<sup>2</sup> and tail call optimisation<sup>3</sup>. These are language features that aid functional programming. They mention mapping, reducing, pipelining, recursing, currying<sup>4</sup> and the use of higher order functions. These are programming techniques used to write functional code. They mention parallelization<sup>5</sup>, lazy evaluation<sup>6</sup> and determinism<sup>7</sup>. These are advantageous properties of functional programs.
 
-Ignore all that. Functional code is characterised by one thing: the absence of side effects. It doesn&#8217;t rely on data outside the current function, and it doesn&#8217;t change data that exists outside the current function. Every other &#8220;functional&#8221; thing can be derived from this property. Use it as a guide rope as you learn.
+Ignore all that. Functional code is characterised by one thing: the absence of side effects. It doesn't rely on data outside the current function, and it doesn't change data that exists outside the current function. Every other "functional" thing can be derived from this property. Use it as a guide rope as you learn.
 
 This is an unfunctional function:
 
@@ -32,7 +32,7 @@ This is a functional function:
     return a + 1
 </pre>
 
-### Don&#8217;t iterate over lists. Use map and reduce.
+### Don't iterate over lists. Use map and reduce.
 
 #### Map
 
@@ -54,7 +54,7 @@ print squares
 # => [0, 1, 4, 9, 16]
 </pre>
 
-This map doesn&#8217;t take a named function. It takes an anonymous, inlined function defined with `lambda`. The parameters of the lambda are defined to the left of the colon. The function body is defined to the right of the colon. The result of running the function body is (implicitly) returned.
+This map doesn't take a named function. It takes an anonymous, inlined function defined with `lambda`. The parameters of the lambda are defined to the left of the colon. The function body is defined to the right of the colon. The result of running the function body is (implicitly) returned.
 
 The unfunctional code below takes a list of real names and replaces them with randomly assigned code names.
 
@@ -70,7 +70,7 @@ print names
 # => ['Mr. Blonde', 'Mr. Blonde', 'Mr. Blonde']
 </pre>
 
-(As you can see, this algorithm can potentially assign the same secret code name to multiple secret agents. Hopefully, this won&#8217;t be a source of confusion during the secret mission.)
+(As you can see, this algorithm can potentially assign the same secret code name to multiple secret agents. Hopefully, this won't be a source of confusion during the secret mission.)
 
 This can be rewritten as a map:
 
@@ -95,7 +95,7 @@ print names
 # => [6306819796133686941, 8135353348168144921, -1228887169324443034]
 </pre>
 
-(Hopefully, the secret agents will have good memories and won&#8217;t forget each other&#8217;s secret code names during the secret mission.)
+(Hopefully, the secret agents will have good memories and won't forget each other's secret code names during the secret mission.)
 
 My solution:
 
@@ -151,11 +151,11 @@ Why are map and reduce better?
 
 First, they are often one-liners.
 
-Second, the important parts of the iteration &#8211; the collection, the operation and the return value &#8211; are always in the same places in every map and reduce.
+Second, the important parts of the iteration - the collection, the operation and the return value - are always in the same places in every map and reduce.
 
 Third, the code in a loop may affect variables defined before it or code that runs after it. By convention, maps and reduces are functional.
 
-Fourth, map and reduce are elemental operations. Every time a person reads a `for` loop, they have to work through the logic line by line. There are few structural regularities they can use to create a scaffolding on which to hang their understanding of the code. In contrast, map and reduce are at once building blocks that can be combined into complex algorithms, and elements that the code reader can instantly understand and abstract in their mind. &#8220;Ah, this code is transforming each item in this collection. It&#8217;s throwing some of the transformations away. It&#8217;s combining the remainder into a single output.&#8221;
+Fourth, map and reduce are elemental operations. Every time a person reads a `for` loop, they have to work through the logic line by line. There are few structural regularities they can use to create a scaffolding on which to hang their understanding of the code. In contrast, map and reduce are at once building blocks that can be combined into complex algorithms, and elements that the code reader can instantly understand and abstract in their mind. "Ah, this code is transforming each item in this collection. It's throwing some of the transformations away. It's combining the remainder into a single output."
 
 Fifth, map and reduce have many friends that provide useful, tweaked versions of their basic behaviour. For example: `filter`, `all`, `any` and `find`.
 
@@ -179,7 +179,7 @@ if height_count > 0:
     # => 120
 </pre>
 
-If this seems tricky, try not thinking about the operations on the data. Think of the states the data will go through, from the list of people dictionaries to the average height. Don&#8217;t try and bundle multiple transformations together. Put each on a separate line and assign the result to a descriptively-named variable. Once the code works, condense it.
+If this seems tricky, try not thinking about the operations on the data. Think of the states the data will go through, from the list of people dictionaries to the average height. Don't try and bundle multiple transformations together. Put each on a separate line and assign the result to a descriptively-named variable. Once the code works, condense it.
 
 My solution:
 
@@ -277,7 +277,7 @@ while time:
     draw()
 </pre>
 
-To understand this program, the reader just reads the main loop. &#8220;If there is time left, run a step of the race and draw. Check the time again.&#8221; If the reader wants to understand more about what it means to run a step of the race, or draw, they can read the code in those functions.
+To understand this program, the reader just reads the main loop. "If there is time left, run a step of the race and draw. Check the time again." If the reader wants to understand more about what it means to run a step of the race, or draw, they can read the code in those functions.
 
 There are no comments any more. The code describes itself.
 
@@ -387,7 +387,7 @@ print bands
 #     {'name': 'A Silver Mt Zion', 'active': True, 'country': 'Canada'}]
 </pre>
 
-Worries are stirred by the name of the function. &#8220;format&#8221; is very vague. Upon closer inspection of the code, these worries begin to claw. Three things happen in the same loop. The `'country'` key gets set to `'Canada'`. Punctuation is removed from the band name. The band name gets capitalized. It is hard to tell what the code is intended to do and hard to tell if it does what it appears to do. The code is hard to reuse, hard to test and hard to parallelize.
+Worries are stirred by the name of the function. "format" is very vague. Upon closer inspection of the code, these worries begin to claw. Three things happen in the same loop. The `'country'` key gets set to `'Canada'`. Punctuation is removed from the band name. The band name gets capitalized. It is hard to tell what the code is intended to do and hard to tell if it does what it appears to do. The code is hard to reuse, hard to test and hard to parallelize.
 
 Compare it with this:
 
@@ -400,7 +400,7 @@ This code is easy to understand. It gives the impression that the auxiliary func
 
 The job of `pipeline_each()` is to pass the bands, one at a time, to a transformation function, like `set_canada_as_country()`. After the function has been applied to all the bands, `pipeline_each()` bundles up the transformed bands. Then, it passes each one to the next function.
 
-Let&#8217;s look at the transformation functions.
+Let's look at the transformation functions.
 
 <pre class="prettyprint">def assoc(_d, key, value):
     from copy import deepcopy
@@ -424,7 +424,7 @@ Everything seems fine. Band dictionary originals are protected from mutation whe
 
 Fortunately, `replace()` and `title()` do not mutate the strings they operate on. This is because strings are immutable in Python. When, for example, `replace()` operates on a band name string, the original band name is copied and `replace()` is called on the copy. Phew.
 
-This contrast between the mutability of strings and dictionaries in Python illustrates the appeal of languages like Clojure. The programmer need never think about whether they are mutating data. They aren&#8217;t.
+This contrast between the mutability of strings and dictionaries in Python illustrates the appeal of languages like Clojure. The programmer need never think about whether they are mutating data. They aren't.
 
 **Exercise 4**. Try and write the `pipeline_each` function. Think about the order of operations. The bands in the array are passed, one band at a time, to the first transformation function. The bands in the resulting array are passed, one band at a time, to the second transformation function. And so forth.
 
@@ -468,7 +468,7 @@ def call(fn, key):
     return apply_fn
 </pre>
 
-There is a lot going on here. Let&#8217;s take it piece by piece.
+There is a lot going on here. Let's take it piece by piece.
 
 One. `call()` is a higher order function. A higher order function takes a function as an argument, or returns a function. Or, like `call()`, it does both.
 
@@ -476,7 +476,7 @@ Two. `apply_fn()` looks very similar to the three transformation functions. It t
 
 Three. `call()` does not do any actual work. `apply_fn()`, when called, will do the work. In the example of using `pipeline_each()` above, one instance of `apply_fn()` will set `'country'` to `'Canada'` on a passed band. Another instance will capitalize the name of a passed band.
 
-Four. When an `apply_fn()` instance is run, `fn` and `key` will not be in scope. They are neither arguments to `apply_fn()`, nor locals inside it. But they will still be accessible. When a function is defined, it saves references to the variables it closes over: those that were defined in a scope outside the function and that are used inside the function. When the function is run and its code references a variable, Python looks up the variable in the locals and in the arguments. If it doesn&#8217;t find it there, it looks in the saved references to closed over variables. This is where it will find `fn` and `key`.
+Four. When an `apply_fn()` instance is run, `fn` and `key` will not be in scope. They are neither arguments to `apply_fn()`, nor locals inside it. But they will still be accessible. When a function is defined, it saves references to the variables it closes over: those that were defined in a scope outside the function and that are used inside the function. When the function is run and its code references a variable, Python looks up the variable in the locals and in the arguments. If it doesn't find it there, it looks in the saved references to closed over variables. This is where it will find `fn` and `key`.
 
 Five. There is no mention of bands in the `call()` code. That is because `call()` could be used to generate pipeline functions for any program, regardless of topic. Functional programming is partly about building up a library of generic, reusable, composable functions.
 
@@ -533,7 +533,7 @@ Think of the bands. Turn a sequence of operations into a pipeline.
   
 
 
-<sup>1</sup> An immutable piece of data is one that cannot be changed. Some languages, like Clojure, make all values immutable by default. Any &#8220;mutating&#8221; operations copy the value, change it and pass back the changed copy. This eliminates bugs that arise from a programmer&#8217;s incomplete model of the possible states their program may enter.
+<sup>1</sup> An immutable piece of data is one that cannot be changed. Some languages, like Clojure, make all values immutable by default. Any "mutating" operations copy the value, change it and pass back the changed copy. This eliminates bugs that arise from a programmer's incomplete model of the possible states their program may enter.
 
 <sup>2</sup> Languages that support first class functions allow functions to be treated like any other value. This means they can be created, passed to functions, returned from functions and stored inside data structures.
 

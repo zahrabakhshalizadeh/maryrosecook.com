@@ -6,7 +6,7 @@ permalink: /post/empty-black
 categories:
   - Uncategorized
 ---
-In March, I posted [What I&#8217;ve been working on][1]. In it, I showed four images of [Empty Black][2], the game I was making. At that point, I was still planning for it to be driven by musical puzzles where you played tunes to open doors. Since then, it has turned into a game of three parts: deft jumping, tactile combat and block-throwing puzzles.
+In March, I posted [What I've been working on][1]. In it, I showed four images of [Empty Black][2], the game I was making. At that point, I was still planning for it to be driven by musical puzzles where you played tunes to open doors. Since then, it has turned into a game of three parts: deft jumping, tactile combat and block-throwing puzzles.
 
 [Play the game][3].
 

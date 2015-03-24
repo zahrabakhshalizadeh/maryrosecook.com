@@ -6,7 +6,7 @@ permalink: /post/the-mars-volta
 categories:
   - Uncategorized
 ---
-Here, [according to Last.fm][1], are the bands I have listened to the most over the last seven years. I have put in bold the bands that feel like a part of my identity. When I think about these bands, I get a warm glow. When I talk about them, I say &#8220;I fucking love&#8221;.
+Here, [according to Last.fm][1], are the bands I have listened to the most over the last seven years. I have put in bold the bands that feel like a part of my identity. When I think about these bands, I get a warm glow. When I talk about them, I say "I fucking love".
 
 [**Dear and the Headlights**][2]  
 [**Sunset Rubdown**][3]  
@@ -29,19 +29,19 @@ Here, [according to Last.fm][1], are the bands I have listened to the most over 
 
 These identity bands have some common traits.
 
-One. I love at least two of their records. Dear and the Headlights: both of their albums. Sunset Rubdown: all of their albums. Women: both of their albums. Des Ark: all of their live acoustic records. The Paper Chase: [Now You Are One of Us][20] and [God Bless Your Black Heart][21]. A Silver Mt. Zion is the exception, here. [Horses in the Sky][22] is one of my top ten records, ever. The rest of their albums probably aren&#8217;t even in my top fifty.
+One. I love at least two of their records. Dear and the Headlights: both of their albums. Sunset Rubdown: all of their albums. Women: both of their albums. Des Ark: all of their live acoustic records. The Paper Chase: [Now You Are One of Us][20] and [God Bless Your Black Heart][21]. A Silver Mt. Zion is the exception, here. [Horses in the Sky][22] is one of my top ten records, ever. The rest of their albums probably aren't even in my top fifty.
 
 Two. I admire the aesthetic they achieve. Dear and the Headlights. The most beautiful melodies by anyone, ever. Bob Dylan. The deeper you go into his lyrics, the more you find. Women. The Beach Boys as a noise rock band. The Paper Chase. Find the most beautiful melody, then destroy it with how hard you feel it. Des Ark. Equate the art with the artist. Aimée Argote puts no distance between her manifestation in real life and her manifestation in her art. She makes music that, when heard, might be detrimental to her actual life.
 
-Three. I find pieces of their music very meaningful. It is hard for me to cite examples, because music is so far from words. Not only is it impossible for me to explain why I love Bob Dylan&#8217;s line, &#8220;Let me dance beneath the diamond sky with one hand waving free&#8221;, but it&#8217;s precisely because of its wordless meaning that I like it, and it was Dylan who taught me that alogical emotion is worthy of trust.
+Three. I find pieces of their music very meaningful. It is hard for me to cite examples, because music is so far from words. Not only is it impossible for me to explain why I love Bob Dylan's line, "Let me dance beneath the diamond sky with one hand waving free", but it's precisely because of its wordless meaning that I like it, and it was Dylan who taught me that alogical emotion is worthy of trust.
 
-Four. I admire (my conception of) the song-writer as a person. Sunset Rubdown&#8217;s Spencer Krug has a solo project, [Moonface][23]. The Pitchfork [review][24] of the Moonface record, [Organ Music Not Vibraphone Like I’d Hoped][25], said Sunset Rubdown’s [Dragonslayer][26] is “A personal record about the toll that the worlds inside someone’s head takes on his relationships.” Des Ark. Aimée Argote sings about being a broken, high-functioning person. She sings about immovable, incidental, unpolitical queerness. Bob Dylan. He constantly moves on from his previous successes. As seen in the documentaries, [Dont Look Back][27], and [No Direction Home][28]: he lives this life on the road half in love with Joan Baez, half in love with his own head.
+Four. I admire (my conception of) the song-writer as a person. Sunset Rubdown's Spencer Krug has a solo project, [Moonface][23]. The Pitchfork [review][24] of the Moonface record, [Organ Music Not Vibraphone Like I’d Hoped][25], said Sunset Rubdown’s [Dragonslayer][26] is “A personal record about the toll that the worlds inside someone’s head takes on his relationships.” Des Ark. Aimée Argote sings about being a broken, high-functioning person. She sings about immovable, incidental, unpolitical queerness. Bob Dylan. He constantly moves on from his previous successes. As seen in the documentaries, [Dont Look Back][27], and [No Direction Home][28]: he lives this life on the road half in love with Joan Baez, half in love with his own head.
 
 But, most of the entries in that list are unbolded. These others are the bands that I simply listen to a lot. And I have listened to [De-Loused in the Comatorium][29] and [Frances the Mute][30] an awful lot.
 
-I can&#8217;t identify with The Mars Volta&#8217;s music. Cedric Bixler-Zavala&#8217;s lyrics mean nothing. He chooses words that are one, impressionist remove from their actual meaning, rather than assembling a rich, internally consistent network from a few versatile base operators. Omar Rodríguez-López&#8217;s approach to arrangement is to chuck everything in. By saying everything, you say nothing.
+I can't identify with The Mars Volta's music. Cedric Bixler-Zavala's lyrics mean nothing. He chooses words that are one, impressionist remove from their actual meaning, rather than assembling a rich, internally consistent network from a few versatile base operators. Omar Rodríguez-López's approach to arrangement is to chuck everything in. By saying everything, you say nothing.
 
-I really like the [Tony Scott][31] film, [Enemy of the State][32]. It is a thriller that is brilliantly thrilling. In the same way, The Mars Volta&#8217;s music cuts in on a primal level and makes me want to sing and dance, which is kind of what music is supposed to be all about.
+I really like the [Tony Scott][31] film, [Enemy of the State][32]. It is a thriller that is brilliantly thrilling. In the same way, The Mars Volta's music cuts in on a primal level and makes me want to sing and dance, which is kind of what music is supposed to be all about.
 
  [1]: http://www.last.fm/user/maryrosecook/library
  [2]: http://en.wikipedia.org/wiki/Dear_and_the_Headlights

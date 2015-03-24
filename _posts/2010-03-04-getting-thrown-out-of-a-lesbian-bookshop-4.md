@@ -12,7 +12,7 @@ We came up the stairs and into the lesbian bookshop. There was to be a showing o
 
 We found a few women hanging around, one of them in debate with a bloke. My German is not great, but it became clear that men are not allowed in the lesbian bookshop. So, my colleague, the other guy and I left.
 
-I was once involved in organising a feminist health weekender that was for women and woman-identified trans people only. I felt that the event suffered because of that policy: the perspectives and ideas of my male friends were missing. Further, I don&#8217;t see how such a policy can be anything other that bigoted: it&#8217;s prejudice in the literal sense, pre judgement.
+I was once involved in organising a feminist health weekender that was for women and woman-identified trans people only. I felt that the event suffered because of that policy: the perspectives and ideas of my male friends were missing. Further, I don't see how such a policy can be anything other that bigoted: it's prejudice in the literal sense, pre judgement.
 
 The most frequently used justification for such a policy is based on creating safe spaces. If you exclude those who a group feels could impinge on their freedom, you create a haven where people can act and think as they wish without fear of harm.
 

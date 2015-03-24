@@ -12,6 +12,6 @@ First, I cleaned up the app folder. I put references to all my personal scripts,
 
 Second, I cleaned all the secret and Playmary.com-specific stuff out of the code: Amazon AWS login details, the link to the default audiography, contact information. I put it all into shared/config/config.yml and then wrote a method that returns the data referenced by the passed key.
 
-Finally, I had to get rid of all this secret stuff from the project&#8217;s git history. After wrestling with rebase for quite a while, I gave in. I deleted the .git folder in my local copy of the code, changed the name of the Github repository to playmary-old, created a new repository on Github called playmary and pushed my local copy of the code into it.
+Finally, I had to get rid of all this secret stuff from the project's git history. After wrestling with rebase for quite a while, I gave in. I deleted the .git folder in my local copy of the code, changed the name of the Github repository to playmary-old, created a new repository on Github called playmary and pushed my local copy of the code into it.
 
  [1]: http://github.com/maryrosecook/playmary
