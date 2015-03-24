@@ -1,0 +1,65 @@
+==================================================================
+https://keybase.io/maryrosecook
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://maryrosecook.com
+  * I am maryrosecook (https://keybase.io/maryrosecook) on keybase.
+  * I have a public key with fingerprint 59DB 7EF4 2BAC 5D67 22FB  F7DA 7DFF 4628 A3F1 83AF
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "59db7ef42bac5d6722fbf7da7dff4628a3f183af",
+            "host": "keybase.io",
+            "key_id": "7dff4628a3f183af",
+            "uid": "5e29fb45f40531493cbc6c3ed1110e00",
+            "username": "maryrosecook"
+        },
+        "service": {
+            "hostname": "maryrosecook.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1411485779,
+    "expire_in": 157680000,
+    "prev": "50d8247b6b9054a45bd8db47419805816ef370a8863e4681320f05b1db418e62",
+    "seqno": 2,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v1.0.5
+Comment: https://keybase.io/crypto
+
+yMHiAnicbZFdSBRRFMd3UxM3lyRKSbLceUiUZZ3vL/ZFTLYEfTDJoGSZmXtnd9h2
+Zp2d3bJNsaI1KEUtzSgfIoIwysAw+8SsoBSxgogN6iFTJBAilLCH6o7Um/flcM//
+d/7nHM4Ld5bD5cwUaD8v9lfvdE5PrCYcjZ6e/SlMNkArJqawCFwLqqaHoBkzNd3C
+RIwRgMxBlSZlSWEAy5GkKqsckDigqjRL8hKlEjwlqZgXCxtxuwLZyFIc+jQD5dAn
+qAGUXYdPrAkMJAVVphmVxhmKoAVKkRVWoSAgCAKHOG6DcWjqUhQiOiqZraYRh4ph
+RLA2L4aUpKZAe267/TqUTzGiyCNmGpahGEeQGrasmGgXW60xmz4K5eA/n6Cs6QDt
+jwqS0Ixrho6JBCIVS7ONCZogaJ7hOMGLwWMxzYRBzSYYjuVx9Ow2MGkvhQOepDmZ
+lQWcoSWakQEPZJqjCYHHGZ5goUpxuMTzLAVplicoEldxRiYQQ/CQJTF7sxbdwEQS
+jSmFkGVcC+mSlTAh1jY5cTjb4XQ5NuZsQBdsdLjyCv7f9aCY+ydSPOu670uAFDNS
+ty2V271w6/PbZUstalhpKfHKj4pff3myPZN3knBYqTRYfFne0btVyEwMzPomr47k
+PyvaM+j84A4ro7l5c03jb0aVyleesqnhd9rxiuFM/+mKO/PMgbEHgc0VVaX9yzOX
+A57R4VDNp3DfUkdXVynTFCoKFO4tG7g93TkzbuhtDxeb329y1wy2+75Hh0yYbnbc
+bJi6mw8uXYBVP4bu1bkPrYTLT+weBDf66tO7zp2pLQl8LRzYotNT1R+1VdK/43rZ
+74bu3rNp3745o/JxMubv8Tt7F7JPDQnPa7N+LY+Iw2Pf5s9f83XmLF3xt4uRp576
+vyKUDws=
+=D7oP
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/maryrosecook
+
+==================================================================
