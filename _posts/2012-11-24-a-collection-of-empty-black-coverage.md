@@ -2,7 +2,7 @@
 title: Empty Black coverage
 author: maryrosecook
 layout: post
-permalink: /post/a-collection-of-empty-black-coverage
+permalink: /blog/post/a-collection-of-empty-black-coverage
 categories:
   - Uncategorized
 ---

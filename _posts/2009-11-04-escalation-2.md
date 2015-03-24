@@ -2,7 +2,7 @@
 title: Escalation
 author: maryrosecook
 layout: post
-permalink: /post/escalation-2
+permalink: /blog/post/escalation-2
 categories:
   - Uncategorized
 ---

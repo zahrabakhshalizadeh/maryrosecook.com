@@ -2,7 +2,7 @@
 title: The Mars Volta
 author: maryrosecook
 layout: post
-permalink: /post/the-mars-volta
+permalink: /blog/post/the-mars-volta
 categories:
   - Uncategorized
 ---

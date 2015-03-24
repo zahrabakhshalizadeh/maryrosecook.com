@@ -2,7 +2,7 @@
 title: 'My first open source app: Playmary'
 author: maryrosecook
 layout: post
-permalink: /post/my-first-open-source-app-playmary-2
+permalink: /blog/post/my-first-open-source-app-playmary-2
 categories:
   - Uncategorized
 ---

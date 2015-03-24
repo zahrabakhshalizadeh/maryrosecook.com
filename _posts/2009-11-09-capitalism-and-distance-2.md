@@ -2,7 +2,7 @@
 title: Capitalism and distance
 author: maryrosecook
 layout: post
-permalink: /post/capitalism-and-distance-2
+permalink: /blog/post/capitalism-and-distance-2
 categories:
   - Uncategorized
 ---

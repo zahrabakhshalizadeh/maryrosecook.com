@@ -2,7 +2,7 @@
 title: I'm giving a talk about Pistol Slut at the Berlin JavaScript group
 author: maryrosecook
 layout: post
-permalink: /post/javascript-berlin
+permalink: /blog/post/javascript-berlin
 categories:
   - Uncategorized
 ---

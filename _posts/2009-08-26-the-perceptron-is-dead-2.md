@@ -2,7 +2,7 @@
 title: the perceptron is dead
 author: maryrosecook
 layout: post
-permalink: /post/the-perceptron-is-dead-2
+permalink: /blog/post/the-perceptron-is-dead-2
 categories:
   - Uncategorized
 ---

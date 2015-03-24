@@ -2,7 +2,7 @@
 title: Empty Black
 author: maryrosecook
 layout: post
-permalink: /post/empty-black
+permalink: /blog/post/empty-black
 categories:
   - Uncategorized
 ---

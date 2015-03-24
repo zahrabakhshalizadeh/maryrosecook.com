@@ -2,7 +2,7 @@
 title: 2D collision detection in Pistol Slut
 author: maryrosecook
 layout: post
-permalink: /post/how-to-do-2d-collision-detection
+permalink: /blog/post/how-to-do-2d-collision-detection
 categories:
   - Uncategorized
 ---

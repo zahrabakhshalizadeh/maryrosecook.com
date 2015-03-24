@@ -2,7 +2,7 @@
 title: Git in six hundred words
 author: maryrosecook
 layout: post
-permalink: /post/git-in-six-hundred-words
+permalink: /blog/post/git-in-six-hundred-words
 categories:
   - Uncategorized
 ---

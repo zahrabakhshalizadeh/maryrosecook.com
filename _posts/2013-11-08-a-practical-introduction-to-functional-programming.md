@@ -2,7 +2,7 @@
 title: A practical introduction to functional programming
 author: maryrosecook
 layout: post
-permalink: /post/a-practical-introduction-to-functional-programming
+permalink: /blog/post/a-practical-introduction-to-functional-programming
 categories:
   - Uncategorized
 ---

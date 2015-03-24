@@ -2,7 +2,7 @@
 title: 'Kisses: the codename for my new app, and fun little functions'
 author: maryrosecook
 layout: post
-permalink: /post/kisses-the-codename-for-my-new-app-and-fun-little-functions-2
+permalink: /blog/post/kisses-the-codename-for-my-new-app-and-fun-little-functions-2
 categories:
   - Uncategorized
 ---

@@ -2,7 +2,7 @@
 title: Harder Faster Louder
 author: maryrosecook
 layout: post
-permalink: /post/harder-faster-louder-2
+permalink: /blog/post/harder-faster-louder-2
 categories:
   - Uncategorized
 ---

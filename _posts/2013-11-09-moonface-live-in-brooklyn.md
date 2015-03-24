@@ -2,7 +2,7 @@
 title: Moonface, live in Brooklyn
 author: maryrosecook
 layout: post
-permalink: /post/moonface-live-in-brooklyn
+permalink: /blog/post/moonface-live-in-brooklyn
 categories:
   - Uncategorized
 ---

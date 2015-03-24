@@ -2,7 +2,7 @@
 title: Adding keyboard control to Playmary
 author: maryrosecook
 layout: post
-permalink: /post/adding-keyboard-control-to-playmary-3
+permalink: /blog/post/adding-keyboard-control-to-playmary-3
 categories:
   - Uncategorized
 ---

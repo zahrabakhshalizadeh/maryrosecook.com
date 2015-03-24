@@ -2,7 +2,7 @@
 title: When you come to the end, you go back to the beginning
 author: maryrosecook
 layout: post
-permalink: /post/when-you-come-to-the-end-you-go-back-to-the-beginning-2
+permalink: /blog/post/when-you-come-to-the-end-you-go-back-to-the-beginning-2
 categories:
   - Uncategorized
 ---

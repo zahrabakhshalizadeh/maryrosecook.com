@@ -2,7 +2,7 @@
 title: Capture The Flag London
 author: maryrosecook
 layout: post
-permalink: /post/capture-the-flag-london-3
+permalink: /blog/post/capture-the-flag-london-3
 categories:
   - Uncategorized
 ---

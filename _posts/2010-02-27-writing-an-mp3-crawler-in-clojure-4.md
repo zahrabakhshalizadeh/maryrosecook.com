@@ -2,7 +2,7 @@
 title: Writing an mp3 crawler in Clojure
 author: maryrosecook
 layout: post
-permalink: /post/writing-an-mp3-crawler-in-clojure-4
+permalink: /blog/post/writing-an-mp3-crawler-in-clojure-4
 categories:
   - Uncategorized
 ---
@@ -31,13 +31,13 @@ URLs are requested by asynchronous agents in batches of twenty. Thus, they can b
 
 #### Host scores
 
-A record is kept of the mp3-richness of each host the crawler encounters. Each mp3 found on a host scores it a point. Each crawl of a URL on the host loses it a point. So, say [www.saidthegramophone.com/archives/in\_this\_box\_or\_another.php][2] was crawled and five mp3s were found, four points would be added to the score for [www.saidthegramophone.com][3]
+A record is kept of the mp3-richness of each host the crawler encounters. Each mp3 found on a host scores it a point. Each crawl of a URL on the host loses it a point. So, say [www.saidthegramophone.com/archives/in_this_box_or_another.php][2] was crawled and five mp3s were found, four points would be added to the score for [www.saidthegramophone.com][3]
 
 `update-host-scores` updates a hash of hosts and scores after a new URL is crawled:
 
 <script src="http://gist.github.com/316641.js?file=update-host-scores.clj"></script>
 
-`gen-host-scores` - 
+`gen-host-scores` -
 
 <script src="http://gist.github.com/316641.js?file=gen-host-scores.clj"></script>
 

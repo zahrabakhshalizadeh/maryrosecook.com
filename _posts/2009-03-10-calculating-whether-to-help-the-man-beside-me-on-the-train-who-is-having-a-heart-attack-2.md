@@ -2,7 +2,7 @@
 title: Calculating whether to help the man beside me on the train who is having a heart attack
 author: maryrosecook
 layout: post
-permalink: /post/calculating-whether-to-help-the-man-beside-me-on-the-train-who-is-having-a-heart-attack-2
+permalink: /blog/post/calculating-whether-to-help-the-man-beside-me-on-the-train-who-is-having-a-heart-attack-2
 categories:
   - Uncategorized
 ---

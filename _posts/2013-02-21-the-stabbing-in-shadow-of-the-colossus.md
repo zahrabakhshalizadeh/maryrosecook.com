@@ -2,7 +2,7 @@
 title: The stabbing in Shadow of the Colossus
 author: maryrosecook
 layout: post
-permalink: /post/the-stabbing-in-shadow-of-the-colossus
+permalink: /blog/post/the-stabbing-in-shadow-of-the-colossus
 categories:
   - Uncategorized
 ---

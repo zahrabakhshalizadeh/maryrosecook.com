@@ -2,7 +2,7 @@
 title: The Fibonacci heap ruins my life
 author: maryrosecook
 layout: post
-permalink: /post/the-fibonacci-heap-ruins-my-life
+permalink: /blog/post/the-fibonacci-heap-ruins-my-life
 categories:
   - Uncategorized
 ---

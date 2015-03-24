@@ -2,7 +2,7 @@
 title: Books I have read recently
 author: maryrosecook
 layout: post
-permalink: /post/books-i-have-read-recently-2
+permalink: /blog/post/books-i-have-read-recently-2
 categories:
   - Uncategorized
 ---
@@ -22,7 +22,7 @@ categories:
 
 [Violent Cases][8], Neil Gaiman and Dave McKean
 
-<a href="http://en.wikipedia.org/wiki/Surely\_You" re\_joking>Surely You're Joking, Mr Feynman!</a>, Richard P. Feynman
+<a href="http://en.wikipedia.org/wiki/Surely_You%27re_Joking,_Mr._Feynman!">Surely You're Joking, Mr Feynman!</a>, Richard P. Feynman
 
  [1]: http://www.gigamonkeys.com/book/
  [2]: http://en.wikipedia.org/wiki/DMZ_(DC_Comics)

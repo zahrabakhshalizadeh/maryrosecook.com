@@ -2,7 +2,7 @@
 title: Freeing disk space on your Linux server
 author: maryrosecook
 layout: post
-permalink: /post/freeing-disk-space-on-your-linux-server
+permalink: /blog/post/freeing-disk-space-on-your-linux-server
 categories:
   - Uncategorized
 ---

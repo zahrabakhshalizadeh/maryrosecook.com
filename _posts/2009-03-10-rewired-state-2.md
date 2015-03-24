@@ -2,7 +2,7 @@
 title: Rewired State
 author: maryrosecook
 layout: post
-permalink: /post/rewired-state-2
+permalink: /blog/post/rewired-state-2
 categories:
   - Uncategorized
 ---

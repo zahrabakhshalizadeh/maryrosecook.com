@@ -2,7 +2,7 @@
 title: Getting thrown out of a lesbian bookshop
 author: maryrosecook
 layout: post
-permalink: /post/getting-thrown-out-of-a-lesbian-bookshop-4
+permalink: /blog/post/getting-thrown-out-of-a-lesbian-bookshop-4
 categories:
   - Uncategorized
 ---

@@ -3,7 +3,7 @@ title: The slides from my talk on Pistol Slut
 author: maryrosecook
 excerpt: hi
 layout: post
-permalink: /post/pistol-slut-talk-slides
+permalink: /blog/post/pistol-slut-talk-slides
 categories:
   - Uncategorized
 ---

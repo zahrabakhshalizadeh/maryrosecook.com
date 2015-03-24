@@ -2,7 +2,7 @@
 title: 'Pistol Slut: some details about her'
 author: maryrosecook
 layout: post
-permalink: /post/pistol-slut-how-she-works
+permalink: /blog/post/pistol-slut-how-she-works
 categories:
   - Uncategorized
 ---

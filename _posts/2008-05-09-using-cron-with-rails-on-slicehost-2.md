@@ -2,7 +2,7 @@
 title: Using cron with Rails on Slicehost
 author: maryrosecook
 layout: post
-permalink: /post/using-cron-with-rails-on-slicehost-2
+permalink: /blog/post/using-cron-with-rails-on-slicehost-2
 categories:
   - Uncategorized
 ---

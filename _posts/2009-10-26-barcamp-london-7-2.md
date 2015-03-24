@@ -2,7 +2,7 @@
 title: Barcamp London 7
 author: maryrosecook
 layout: post
-permalink: /post/barcamp-london-7-2
+permalink: /blog/post/barcamp-london-7-2
 categories:
   - Uncategorized
 ---

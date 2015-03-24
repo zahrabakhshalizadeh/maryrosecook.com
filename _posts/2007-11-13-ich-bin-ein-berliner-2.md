@@ -2,7 +2,7 @@
 title: Ich Bin Ein Berliner
 author: maryrosecook
 layout: post
-permalink: /post/ich-bin-ein-berliner-2
+permalink: /blog/post/ich-bin-ein-berliner-2
 categories:
   - Uncategorized
 ---

@@ -2,7 +2,7 @@
 title: Coffee and Sunlight
 author: maryrosecook
 layout: post
-permalink: /post/coffee-and-sunlight-2
+permalink: /blog/post/coffee-and-sunlight-2
 categories:
   - Uncategorized
 ---

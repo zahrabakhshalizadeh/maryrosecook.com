@@ -2,7 +2,7 @@
 title: The rules of Ninja, as I learnt them last night
 author: maryrosecook
 layout: post
-permalink: /post/the-rules-of-ninja-as-i-learnt-them-last-night-at-the-bocoup-offices
+permalink: /blog/post/the-rules-of-ninja-as-i-learnt-them-last-night-at-the-bocoup-offices
 categories:
   - Uncategorized
 ---
@@ -17,3 +17,5 @@ categories:
 5. The next player then makes their move, and so on around the circle.
 
 A video of one of the games we played at the Bocoup offices:
+
+<iframe src="http://player.vimeo.com/video/33829009?title=0&amp;byline=0&amp;portrait=0" width="601" height="338" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>

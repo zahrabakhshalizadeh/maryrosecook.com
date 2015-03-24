@@ -2,7 +2,7 @@
 title: The Compiling Defence
 author: maryrosecook
 layout: post
-permalink: /post/the-compiling-defence-2
+permalink: /blog/post/the-compiling-defence-2
 categories:
   - Uncategorized
 ---

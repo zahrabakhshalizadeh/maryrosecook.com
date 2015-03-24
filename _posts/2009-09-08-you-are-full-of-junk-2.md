@@ -2,7 +2,7 @@
 title: You Are Full Of Junk
 author: maryrosecook
 layout: post
-permalink: /post/you-are-full-of-junk-2
+permalink: /blog/post/you-are-full-of-junk-2
 categories:
   - Uncategorized
 ---

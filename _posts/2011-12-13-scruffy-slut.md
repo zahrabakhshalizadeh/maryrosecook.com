@@ -2,7 +2,7 @@
 title: Scruffy Slut
 author: maryrosecook
 layout: post
-permalink: /post/scruffy-slut
+permalink: /blog/post/scruffy-slut
 categories:
   - Uncategorized
 ---

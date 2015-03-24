@@ -2,7 +2,7 @@
 title: Screencast about writing a Lisp interpreter in JavaScript
 author: maryrosecook
 layout: post
-permalink: /post/a-screencast-of-the-talk-i-gave-at-brooklynjs-about-writing-a-lisp-interpreter-in-javascript
+permalink: /blog/post/a-screencast-of-the-talk-i-gave-at-brooklynjs-about-writing-a-lisp-interpreter-in-javascript
 categories:
   - Uncategorized
 ---

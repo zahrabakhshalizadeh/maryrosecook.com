@@ -2,7 +2,7 @@
 title: About Mary and maryrosecook.com
 author: maryrosecook
 layout: post
-permalink: /post/about-mary-and-maryrosecook-com-2
+permalink: /blog/post/about-mary-and-maryrosecook-com-2
 categories:
   - Uncategorized
 ---

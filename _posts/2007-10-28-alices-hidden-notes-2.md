@@ -2,7 +2,7 @@
 title: Alice's hidden notes
 author: maryrosecook
 layout: post
-permalink: /post/alices-hidden-notes-2
+permalink: /blog/post/alices-hidden-notes-2
 categories:
   - Uncategorized
 ---

@@ -2,7 +2,7 @@
 title: My speech to new Hacker Schoolers
 author: maryrosecook
 layout: post
-permalink: /post/my-speech-to-new-hacker-schoolers
+permalink: /blog/post/my-speech-to-new-hacker-schoolers
 categories:
   - Uncategorized
 ---

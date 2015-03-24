@@ -2,7 +2,7 @@
 title: What I've been working on
 author: maryrosecook
 layout: post
-permalink: /post/what-ive-been-working-on
+permalink: /blog/post/what-ive-been-working-on
 categories:
   - Uncategorized
 ---

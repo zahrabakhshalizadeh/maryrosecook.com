@@ -2,7 +2,7 @@
 title: Experimanntag
 author: maryrosecook
 layout: post
-permalink: /post/experimanntag
+permalink: /blog/post/experimanntag
 categories:
   - Uncategorized
 ---

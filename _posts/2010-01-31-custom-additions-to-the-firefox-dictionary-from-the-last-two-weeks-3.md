@@ -2,7 +2,7 @@
 title: Custom additions to the Firefox dictionary from the last two weeks
 author: maryrosecook
 layout: post
-permalink: /post/custom-additions-to-the-firefox-dictionary-from-the-last-two-weeks-3
+permalink: /blog/post/custom-additions-to-the-firefox-dictionary-from-the-last-two-weeks-3
 categories:
   - Uncategorized
 ---

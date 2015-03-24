@@ -2,7 +2,7 @@
 title: I wrote a quiz for my family. This is the film round. Name the actors pictured and the title.
 author: maryrosecook
 layout: post
-permalink: /post/i-wrote-a-quiz-for-my-family-this-is-the-film-round-name-the-title-and-the-actors-pictured
+permalink: /blog/post/i-wrote-a-quiz-for-my-family-this-is-the-film-round-name-the-title-and-the-actors-pictured
 categories:
   - Uncategorized
 ---

@@ -2,7 +2,7 @@
 title: 'C4[1] videos available'
 author: maryrosecook
 layout: post
-permalink: /post/c41-videos-available-2
+permalink: /blog/post/c41-videos-available-2
 categories:
   - Uncategorized
 ---

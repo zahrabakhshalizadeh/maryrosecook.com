@@ -2,7 +2,7 @@
 title: Maintenance
 author: maryrosecook
 layout: post
-permalink: /post/maintenance-2
+permalink: /blog/post/maintenance-2
 categories:
   - Uncategorized
 ---

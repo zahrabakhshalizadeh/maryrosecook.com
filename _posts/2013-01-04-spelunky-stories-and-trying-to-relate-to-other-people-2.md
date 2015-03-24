@@ -2,7 +2,7 @@
 title: Spelunky, stories and trying to relate to other people
 author: maryrosecook
 layout: post
-permalink: /post/spelunky-stories-and-trying-to-relate-to-other-people-2
+permalink: /blog/post/spelunky-stories-and-trying-to-relate-to-other-people-2
 categories:
   - Uncategorized
 ---

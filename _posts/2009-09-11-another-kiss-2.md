@@ -2,7 +2,7 @@
 title: Another kiss
 author: maryrosecook
 layout: post
-permalink: /post/another-kiss-2
+permalink: /blog/post/another-kiss-2
 categories:
   - Uncategorized
 ---

@@ -2,7 +2,7 @@
 title: Testing from the ground up
 author: maryrosecook
 layout: post
-permalink: /post/testing-from-the-ground-up
+permalink: /blog/post/testing-from-the-ground-up
 categories:
   - Uncategorized
 ---

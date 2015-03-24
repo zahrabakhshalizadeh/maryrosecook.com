@@ -2,11 +2,11 @@
 title: Scarface, Prince of the City and Pieter de Hooch
 author: maryrosecook
 layout: post
-permalink: /post/scarface-prince-of-the-city-and-pieter-de-hooch
+permalink: /blog/post/scarface-prince-of-the-city-and-pieter-de-hooch
 categories:
   - Uncategorized
 ---
-Brian De Palma is very good at making his scenes feel like they are part of a living world. Look at the first drug deal in [Scarface][1]. There are two shots that connect the car on the street to the rooms in the apartment where the deal is being done. 
+Brian De Palma is very good at making his scenes feel like they are part of a living world. Look at the first drug deal in [Scarface][1]. There are two shots that connect the car on the street to the rooms in the apartment where the deal is being done.
 
 In the first shot, the camera follows Tony and Chico across the road and up the stairs to the door of the apartment.
 

@@ -2,7 +2,7 @@
 title: Why do Capistrano deploys of git code take so long?
 author: maryrosecook
 layout: post
-permalink: /post/why-do-capistrano-deploys-of-git-code-take-so-long-2
+permalink: /blog/post/why-do-capistrano-deploys-of-git-code-take-so-long-2
 categories:
   - Uncategorized
 ---

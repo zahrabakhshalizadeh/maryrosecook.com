@@ -2,7 +2,7 @@
 title: Pistol Slut third demo
 author: maryrosecook
 layout: post
-permalink: /post/pistol-slut-third-demo
+permalink: /blog/post/pistol-slut-third-demo
 categories:
   - Uncategorized
 ---

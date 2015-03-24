@@ -2,7 +2,7 @@
 title: Simple and flexible permissions
 author: maryrosecook
 layout: post
-permalink: /post/simple-and-flexible-permissions-2
+permalink: /blog/post/simple-and-flexible-permissions-2
 categories:
   - Uncategorized
 ---

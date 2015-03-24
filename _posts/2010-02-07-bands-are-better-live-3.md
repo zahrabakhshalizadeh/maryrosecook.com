@@ -2,7 +2,7 @@
 title: Bands are better live
 author: maryrosecook
 layout: post
-permalink: /post/bands-are-better-live-3
+permalink: /blog/post/bands-are-better-live-3
 categories:
   - Uncategorized
 ---

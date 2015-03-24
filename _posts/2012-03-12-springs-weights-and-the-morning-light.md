@@ -2,7 +2,7 @@
 title: Springs, weights and the morning light
 author: maryrosecook
 layout: post
-permalink: /post/springs-weights-and-the-morning-light
+permalink: /blog/post/springs-weights-and-the-morning-light
 categories:
   - Uncategorized
 ---

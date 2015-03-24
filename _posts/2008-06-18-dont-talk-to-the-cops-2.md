@@ -2,7 +2,7 @@
 title: Don't talk to the cops
 author: maryrosecook
 layout: post
-permalink: /post/dont-talk-to-the-cops-2
+permalink: /blog/post/dont-talk-to-the-cops-2
 categories:
   - Uncategorized
 ---

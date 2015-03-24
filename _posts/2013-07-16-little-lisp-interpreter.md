@@ -2,7 +2,7 @@
 title: Little Lisp interpreter
 author: maryrosecook
 layout: post
-permalink: /post/little-lisp-interpreter
+permalink: /blog/post/little-lisp-interpreter
 categories:
   - Uncategorized
 ---

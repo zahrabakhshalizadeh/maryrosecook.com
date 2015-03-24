@@ -2,7 +2,7 @@
 title: Old projects
 author: maryrosecook
 layout: post
-permalink: /post/old-projects-2
+permalink: /blog/post/old-projects-2
 categories:
   - Uncategorized
 ---

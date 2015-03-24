@@ -2,7 +2,7 @@
 title: The end of the world, Lee Marvin, shooting police officers, Bruce Sterling and Godspeed You! Black Emperor
 author: maryrosecook
 layout: post
-permalink: /post/the-end-of-the-world-lee-marvin-shooting-police-officers-bruce-sterling-and-godspeed-you-black-emperor-2
+permalink: /blog/post/the-end-of-the-world-lee-marvin-shooting-police-officers-bruce-sterling-and-godspeed-you-black-emperor-2
 enclosure:
   - |
     |

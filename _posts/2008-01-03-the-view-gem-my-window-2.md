@@ -2,7 +2,7 @@
 title: The view gem my window
 author: maryrosecook
 layout: post
-permalink: /post/the-view-gem-my-window-2
+permalink: /blog/post/the-view-gem-my-window-2
 categories:
   - Uncategorized
 ---

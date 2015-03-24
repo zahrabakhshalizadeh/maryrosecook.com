@@ -2,7 +2,7 @@
 title: Hacker School
 author: maryrosecook
 layout: post
-permalink: /post/hacker-school
+permalink: /blog/post/hacker-school
 categories:
   - Uncategorized
 ---

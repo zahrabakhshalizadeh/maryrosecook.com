@@ -2,7 +2,7 @@
 title: How I made Street Hoarding, a Node.js and Redis application, or, a super simple explanation of asynchronicity, event loops, non-blocking IO, JavaScript, Comet and Node
 author: maryrosecook
 layout: post
-permalink: /post/how-i-made-street-hoarding-a-node-js-and-redis-application-or-a-super-simple-explanation-of-asynchronicity-event-loops-non-blocking-io-javascript-and-node
+permalink: /blog/post/how-i-made-street-hoarding-a-node-js-and-redis-application-or-a-super-simple-explanation-of-asynchronicity-event-loops-non-blocking-io-javascript-and-node
 categories:
   - Uncategorized
 ---

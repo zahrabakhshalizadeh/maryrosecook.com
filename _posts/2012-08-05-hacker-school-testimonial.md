@@ -2,7 +2,7 @@
 title: Hacker School testimonial
 author: maryrosecook
 layout: post
-permalink: /post/hacker-school-testimonial
+permalink: /blog/post/hacker-school-testimonial
 categories:
   - Uncategorized
 ---

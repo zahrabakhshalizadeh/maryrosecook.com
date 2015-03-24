@@ -2,7 +2,7 @@
 title: And, we're back
 author: maryrosecook
 layout: post
-permalink: /post/and-were-back-2
+permalink: /blog/post/and-were-back-2
 categories:
   - Uncategorized
 ---

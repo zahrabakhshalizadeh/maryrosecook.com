@@ -2,7 +2,7 @@
 title: Hacking and transience
 author: maryrosecook
 layout: post
-permalink: /post/hacking-and-transience-2
+permalink: /blog/post/hacking-and-transience-2
 categories:
   - Uncategorized
 ---

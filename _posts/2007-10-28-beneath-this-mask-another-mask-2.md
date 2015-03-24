@@ -2,7 +2,7 @@
 title: Beneath this mask, another mask
 author: maryrosecook
 layout: post
-permalink: /post/beneath-this-mask-another-mask-2
+permalink: /blog/post/beneath-this-mask-another-mask-2
 categories:
   - Uncategorized
 ---

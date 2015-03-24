@@ -2,7 +2,7 @@
 title: Fare-dodging on the Berlin U-Bahn
 author: maryrosecook
 layout: post
-permalink: /post/fare-dodging-on-the-berlin-u-bahn-4
+permalink: /blog/post/fare-dodging-on-the-berlin-u-bahn-4
 categories:
   - Uncategorized
 ---

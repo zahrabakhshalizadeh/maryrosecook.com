@@ -2,7 +2,7 @@
 title: Making music
 author: maryrosecook
 layout: post
-permalink: /post/making-music-2
+permalink: /blog/post/making-music-2
 categories:
   - Uncategorized
 ---

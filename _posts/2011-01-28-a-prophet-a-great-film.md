@@ -2,7 +2,7 @@
 title: A Prophet, a great film
 author: maryrosecook
 layout: post
-permalink: /post/a-prophet-a-great-film
+permalink: /blog/post/a-prophet-a-great-film
 categories:
   - Uncategorized
 ---

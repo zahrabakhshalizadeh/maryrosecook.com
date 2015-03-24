@@ -2,7 +2,7 @@
 title: Waterfall and agile in pounds
 author: maryrosecook
 layout: post
-permalink: /post/waterfall-and-agile-in-pounds-2
+permalink: /blog/post/waterfall-and-agile-in-pounds-2
 categories:
   - Uncategorized
 ---

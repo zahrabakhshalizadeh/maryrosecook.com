@@ -2,7 +2,7 @@
 title: Introducing Gitlet
 author: maryrosecook
 layout: post
-permalink: /post/introducing-gitlet
+permalink: /blog/post/introducing-gitlet
 categories:
   - Uncategorized
 ---

@@ -2,7 +2,7 @@
 title: Eating iPods
 author: maryrosecook
 layout: post
-permalink: /post/eating-ipods-2
+permalink: /blog/post/eating-ipods-2
 categories:
   - Uncategorized
 ---

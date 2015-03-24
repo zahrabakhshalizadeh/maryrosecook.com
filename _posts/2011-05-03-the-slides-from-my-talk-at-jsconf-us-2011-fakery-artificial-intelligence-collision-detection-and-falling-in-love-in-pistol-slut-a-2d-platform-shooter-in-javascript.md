@@ -2,7 +2,7 @@
 title: 'The slides from my talk at JSConf US: Fakery, artificial intelligence, collision detection and falling in love in Pistol Slut, a 2D platform shooter in JavaScript'
 author: maryrosecook
 layout: post
-permalink: /post/the-slides-from-my-talk-at-jsconf-us-2011-fakery-artificial-intelligence-collision-detection-and-falling-in-love-in-pistol-slut-a-2d-platform-shooter-in-javascript
+permalink: /blog/post/the-slides-from-my-talk-at-jsconf-us-2011-fakery-artificial-intelligence-collision-detection-and-falling-in-love-in-pistol-slut-a-2d-platform-shooter-in-javascript
 categories:
   - Uncategorized
 ---

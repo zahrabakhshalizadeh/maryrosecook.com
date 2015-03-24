@@ -2,7 +2,7 @@
 title: London G20 Climate Camp Protest photos
 author: maryrosecook
 layout: post
-permalink: /post/london-g20-climate-camp-protest-photos-2
+permalink: /blog/post/london-g20-climate-camp-protest-photos-2
 categories:
   - Uncategorized
 ---

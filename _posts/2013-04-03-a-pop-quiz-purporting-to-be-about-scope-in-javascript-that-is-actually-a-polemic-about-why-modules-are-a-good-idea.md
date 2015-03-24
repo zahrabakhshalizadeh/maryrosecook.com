@@ -2,7 +2,7 @@
 title: A pop quiz purporting to be about scope in JavaScript that is actually a polemic about why modules are a good idea
 author: maryrosecook
 layout: post
-permalink: /post/a-pop-quiz-purporting-to-be-about-scope-in-javascript-that-is-actually-a-polemic-about-why-modules-are-a-good-idea
+permalink: /blog/post/a-pop-quiz-purporting-to-be-about-scope-in-javascript-that-is-actually-a-polemic-about-why-modules-are-a-good-idea
 categories:
   - Uncategorized
 ---

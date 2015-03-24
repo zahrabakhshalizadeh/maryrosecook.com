@@ -2,7 +2,7 @@
 title: the perceptron
 author: maryrosecook
 layout: post
-permalink: /post/the-perceptron-2
+permalink: /blog/post/the-perceptron-2
 categories:
   - Uncategorized
 ---

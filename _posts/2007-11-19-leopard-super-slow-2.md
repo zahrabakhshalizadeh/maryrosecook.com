@@ -2,7 +2,7 @@
 title: Leopard super slow
 author: maryrosecook
 layout: post
-permalink: /post/leopard-super-slow-2
+permalink: /blog/post/leopard-super-slow-2
 categories:
   - Uncategorized
 ---

@@ -2,7 +2,7 @@
 title: Why children should learn to code
 author: maryrosecook
 layout: post
-permalink: /post/why-children-should-learn-to-code
+permalink: /blog/post/why-children-should-learn-to-code
 categories:
   - Uncategorized
 ---

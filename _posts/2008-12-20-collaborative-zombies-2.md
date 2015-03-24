@@ -2,7 +2,7 @@
 title: Collaborative zombies
 author: maryrosecook
 layout: post
-permalink: /post/collaborative-zombies-2
+permalink: /blog/post/collaborative-zombies-2
 categories:
   - Uncategorized
 ---

@@ -2,7 +2,7 @@
 title: How to watch video on one monitor and work on another monitor in VLC on OS X
 author: maryrosecook
 layout: post
-permalink: /post/how-to-watch-video-on-one-monitor-and-work-on-another-monitor-in-vlc-on-os-x-2
+permalink: /blog/post/how-to-watch-video-on-one-monitor-and-work-on-another-monitor-in-vlc-on-os-x-2
 categories:
   - Uncategorized
 ---

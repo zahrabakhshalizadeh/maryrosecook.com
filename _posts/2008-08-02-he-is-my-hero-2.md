@@ -2,7 +2,7 @@
 title: He is my hero
 author: maryrosecook
 layout: post
-permalink: /post/he-is-my-hero-2
+permalink: /blog/post/he-is-my-hero-2
 categories:
   - Uncategorized
 ---

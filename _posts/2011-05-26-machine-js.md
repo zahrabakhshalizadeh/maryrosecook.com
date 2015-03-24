@@ -2,7 +2,7 @@
 title: Machine.js
 author: maryrosecook
 layout: post
-permalink: /post/machine-js
+permalink: /blog/post/machine-js
 categories:
   - Uncategorized
 ---

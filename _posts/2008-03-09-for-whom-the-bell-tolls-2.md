@@ -2,7 +2,7 @@
 title: For Whom The Bell Tolls
 author: maryrosecook
 layout: post
-permalink: /post/for-whom-the-bell-tolls-2
+permalink: /blog/post/for-whom-the-bell-tolls-2
 categories:
   - Uncategorized
 ---

@@ -2,7 +2,7 @@
 title: Listen! Listen!
 author: maryrosecook
 layout: post
-permalink: /post/listen-listen-2
+permalink: /blog/post/listen-listen-2
 categories:
   - Uncategorized
 ---
