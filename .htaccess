@@ -18,3 +18,5 @@ AddOutputFilterByType DEFLATE text/html text/plain application/javascript text/c
 
 RewriteEngine On
 RewriteRule ^/?post/(.*)$ /blog/post/$1 [L,R=301]
+RewriteRule ^/?blog/feed$ /blog/feed.xml [L,R=301]
+RewriteRule ^/?blog/archive$ /blog/archive.html [L,R=301]
