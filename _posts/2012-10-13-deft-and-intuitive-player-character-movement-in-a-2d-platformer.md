@@ -2,7 +2,7 @@
 title: Deft and intuitive player character movement in a 2D platformer
 author: maryrosecook
 layout: post
-permalink: /post/deft-and-intuitive-player-character-movement-in-a-2d-platformer
+permalink: /blog/post/deft-and-intuitive-player-character-movement-in-a-2d-platformer
 categories:
   - Uncategorized
 ---
