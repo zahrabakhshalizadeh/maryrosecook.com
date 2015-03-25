@@ -74,6 +74,18 @@ li a:hover { text-decoration: underline; }
   margin-bottom: 0;
 }
 
+.bang-bang-con a {
+  padding: 0 2px;
+  background-color: #6B1834;
+  color: beige;
+}
+
+.bang-bang-con a:visited {
+  padding: 0 2px;
+  background-color: #6B1834;
+  color: beige;
+}
+
 .project p {
   margin-bottom: 0;
 }
