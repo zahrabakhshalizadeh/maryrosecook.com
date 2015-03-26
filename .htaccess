@@ -10,13 +10,14 @@
     </IfModule>
 </IfModule>
 # END W3TC Browser Cache
-# BEGIN WordPress
 
-# END WordPress
+Options +MultiViews
+
+DirectorySlash Off
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}/index.html -f
+RewriteRule ^(.*)$ /$1/index.html [L]
 
 AddOutputFilterByType DEFLATE text/html text/plain application/javascript text/css
 
 RewriteEngine On
 RewriteRule ^/?post/(.*)$ /blog/post/$1 [L,R=301]
-RewriteRule ^/?blog/feed$ /blog/feed.xml [L,R=301]
-RewriteRule ^/?blog/archive$ /blog/archive.html [L,R=301]
