@@ -13,4 +13,6 @@ twitter_username: maryrosecook
 github_username:  maryrosecook
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
+redcarpet:
+  extensions: [smart, footnotes]

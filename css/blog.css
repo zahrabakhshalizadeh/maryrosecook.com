@@ -23,6 +23,7 @@ code {
   padding: 4px 4px 0 4px;
   background-color: #eee;
   color: #333;
+  word-wrap: break-word;
 }
 
 .navigation-links {
@@ -41,6 +42,13 @@ pre {
   font-family: courier;
   font-size: 0.8em;
   line-height: 1.4em;
+}
+
+pre code {
+  font-size: inherit;
+  padding: 0;
+  background-color: #fff;
+  color: #333;
 }
 
 pre span.pln {
@@ -328,6 +336,25 @@ abbr {
 sup {
   line-height: 0;
   font-size: 0.65em;
+}
+
+sup a {
+  text-decoration: none;
+}
+
+sup a:hover {
+  text-decoration: underline;
+}
+
+.image-caption {
+  text-align: center;
+  font-size: 0.85em;
+  margin: -0.76em 0 0 0;
+  font-style: italic;
+
+  pre, code {
+    font-style: normal;
+  }
 }
 
 @media handheld, only screen and (max-width: 767px) {
