@@ -12,7 +12,7 @@ I had two goals with Gitlet.
 
 First, I wanted to learn the innards of Git really well.
 
-Second, I wanted to use that knowledge to produce an essay, Git from the inside out, that gives a clear, deep explanation of Git and the ideas underlying it. I want this essay to be a foundation for building intuition about how Git works. I felt I would only be able to do this if I understood how Git works well enough to implement it. For example, when I was writing the code, I realised that the Git object database contains two sets of information in one graph of objects: the history, commit by commit, and the repository content, file by file. Which is to say: the repository content and its history are not two separate things, but two views of the same graph.
+Second, I wanted to use that knowledge to produce an essay, <a href="/blog/post/git-from-the-inside-out">Git from the inside out</a>, that gives a clear, deep explanation of Git and the ideas underlying it.
 
 My implementation of Git is not intended to be fast or feature-complete. It is intended to support commands that are commonly used and that demonstrate the core ideas in Git: `init`, `add`, `rm`, `commit`, `branch`, `checkout`, `diff`, `remote`, `fetch`, `merge`, `push`, `pull`, `status` and `clone`. For example, I implemented `remote`, but only supported `git remote add` because `git remote remove` and the rest are just conveniences and their implementation says nothing about the essence of Git.
 
