@@ -1,4 +1,10 @@
-hr { color:#aaa; background-color:#aaa; height:1px; border:0; }
+* {
+  padding:0;
+  margin:0;
+  text-align:left;
+}
+
+hr { color:#bbb; background-color:#bbb; height:1px; border:0; }
 
 body {
   font-family: "Gill Sans W01 Light";
@@ -26,18 +32,13 @@ code {
   word-wrap: break-word;
 }
 
-.navigation-links {
-  float: right;
-  margin-top: 30px;
-}
-
 pre {
-  border-top:1px solid #ddd;
-  border-bottom:1px solid #ddd;
-
+  border-top:1px solid #bbb;
+  border-bottom:1px solid #bbb;
   padding-left:-50px;
-  margin-bottom:15px;
-  padding: 1em 0 0.8em 0;
+  margin-bottom:17px;
+  margin-top: 15px;
+  padding: 1.25em 0 1.1em 0;
   overflow: scroll;
   font-family: courier;
   font-size: 0.8em;
@@ -61,10 +62,9 @@ pre span.pln {
   font-weight:bold;
 }
 
-* {
-  padding:0;
-  margin:0;
-  text-align:left;
+.navigation-links {
+  float: right;
+  margin-top: 30px;
 }
 
 a:hover {
@@ -244,6 +244,18 @@ blockquote {
   min-height:50px;
 }
 
+.footnotes {
+  font-size: 0.9em;
+}
+
+.footnotes a {
+  color: #555;
+}
+
+.footnotes hr {
+  margin-bottom: 12px;
+}
+
 #footer {
   background:#eee;
   font-size:11px;
@@ -349,12 +361,13 @@ sup a:hover {
 .image-caption {
   text-align: center;
   font-size: 0.85em;
-  margin: -0.76em 0 0 0;
+  margin: -0.60em 0 1.4em 0;
   font-style: italic;
+}
 
-  pre, code {
-    font-style: normal;
-  }
+.image-caption code {
+  font-style: normal;
+  font-size: 0.9em;
 }
 
 @media handheld, only screen and (max-width: 767px) {
