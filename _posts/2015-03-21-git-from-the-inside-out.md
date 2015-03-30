@@ -922,9 +922,9 @@ They set the content of `data/number.txt` to `14` and commit the change to `mast
 
 They push `master` to `delta`. Pushing has three steps.
 
-First, all the objects required for the `14` commit on the `master` branch are copied from `alpha/.git/objects/` to `delta/.git/objects/`.
+First, all the objects required for the `14` commit on the `master` branch are copied from `alpha/.git/objects/` to `delta/objects/`.
 
-Second, `.git/refs/heads/master` is updated on `delta` to point at the `14` commit.
+Second, `delta/refs/heads/master` is updated to point at the `14` commit.
 
 Third, `alpha/.git/refs/remotes/delta/master` is set to point at the `14` commit. This means `alpha` has an up-to-date record of the state of `delta`.
 
