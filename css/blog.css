@@ -50,6 +50,7 @@ pre code {
   padding: 0;
   background-color: #fff;
   color: #333;
+  word-wrap: normal;
 }
 
 pre span.pln {
