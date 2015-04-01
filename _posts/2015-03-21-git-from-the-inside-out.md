@@ -74,7 +74,7 @@ The user runs `git add` on `data/letter.txt`. This has two effects.
 
 First, it creates a new blob file in the `.git/objects/` directory.
 
-This blob file contains the compressed content of `data/letter.txt`. Its name is derived by hashing its content. Hashing a piece of text means running a program on it that turns it into a smaller[^1] piece of text that uniquely[^2] identifies the original. For example, Git hashes `a` to `2e65efe2a145dda7ee51d1741299f848e5bf752e`. The first two characters are used as the name of a directory inside the objects database: `.git/objects/5e/`. The rest of the hash is used as the name of the blob file that holds the content of the added file: `.git/objects/2e/65efe2a145dda7ee51d1741299f848e5bf752e`.
+This blob file contains the compressed content of `data/letter.txt`. Its name is derived by hashing its content. Hashing a piece of text means running a program on it that turns it into a smaller[^1] piece of text that uniquely[^2] identifies the original. For example, Git hashes `a` to `2e65efe2a145dda7ee51d1741299f848e5bf752e`. The first two characters are used as the name of a directory inside the objects database: `.git/objects/2e/`. The rest of the hash is used as the name of the blob file that holds the content of the added file: `.git/objects/2e/65efe2a145dda7ee51d1741299f848e5bf752e`.
 
 Notice how just adding a file to Git saves its content to the `objects` directory. Its content will still be safe inside Git if the user deletes `data/letter.txt` from the working copy.
 
