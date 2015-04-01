@@ -74,14 +74,14 @@ The user runs `git add` on `data/letter.txt`. This has two effects.
 
 First, it creates a new blob file in the `.git/objects/` directory.
 
-This blob file contains the compressed content of `data/letter.txt`. Its name is derived by hashing its content. Hashing a piece of text means running a program on it that turns it into a smaller[^1] piece of text that uniquely[^2] identifies the original. For example, Git hashes `a` to `5e40c0877058c504203932e5136051cf3cd3519b`. The first two characters are used as the name of a directory inside the objects database: `.git/objects/5e/`. The rest of the hash is used as the name of the blob file that holds the content of the added file: `.git/objects/5e/40c0877058c504203932e5136051cf3cd3519b`.
+This blob file contains the compressed content of `data/letter.txt`. Its name is derived by hashing its content. Hashing a piece of text means running a program on it that turns it into a smaller[^1] piece of text that uniquely[^2] identifies the original. For example, Git hashes `a` to `2e65efe2a145dda7ee51d1741299f848e5bf752e`. The first two characters are used as the name of a directory inside the objects database: `.git/objects/5e/`. The rest of the hash is used as the name of the blob file that holds the content of the added file: `.git/objects/2e/65efe2a145dda7ee51d1741299f848e5bf752e`.
 
 Notice how just adding a file to Git saves its content to the `objects` directory. If the user were to delete `data/letter.txt` from the working copy, its content would still be safe inside Git.
 
 Second, `git add` adds the file to the index. The index is a list that contains every file that Git has been told to keep track of. It is stored as a file at `.git/index`. Each line of the file maps a tracked file to the hash of its content at the moment it was added. This is the index after the `git add` command is run:
 
 ```
-data/letter.txt 5e40c0877058c504203932e5136051cf3cd3519b
+data/letter.txt 2e65efe2a145dda7ee51d1741299f848e5bf752e
 ```
 
 The user makes a file called `data/number.txt` that contains `1234`.
@@ -108,7 +108,7 @@ The user adds the file to Git.
 The `git add` command creates a blob object that contains the content of `data/number.txt`. And it adds an index entry for `data/number.txt` that points the blob. This is the index after the `git add` command is run a second time:
 
 ```
-data/letter.txt 5e40c0877058c504203932e5136051cf3cd3519b
+data/letter.txt 2e65efe2a145dda7ee51d1741299f848e5bf752e
 data/number.txt 274c0052dd5408f8ae2bc8440029ff67d79bc5c3
 ```
 
@@ -127,7 +127,7 @@ When the user originally created `data/number.txt`, they meant to type `1`, not 
 
 ```bash
 ~/alpha $ git commit -m 'a1'
-          [master (root-commit) c388d51] a1
+          [master (root-commit) 774b54a] a1
 ```
 
 The user makes the `a1` commit. Git prints some data about the commit.  These data will make sense shortly.
@@ -149,8 +149,8 @@ Trees are stored when a commit is made. A tree represents a directory in the wor
 Below is the tree object that records the contents of the `data` directory for the new commit:
 
 ```
-100664 blob 5e40c0877058c504203932e5136051cf3cd3519b letter.txt
-100664 blob 274c0052dd5408f8ae2bc8440029ff67d79bc5c3 number.txt
+100664 blob 2e65efe2a145dda7ee51d1741299f848e5bf752e letter.txt
+100664 blob 56a6051ca2b02b04ef92d5150c9ef600403cb1de number.txt
 ```
 
 The first line records everything required to reproduce `data/letter.txt`.  The first part states the file's permissions.  The second part states that the content of this entry is represented by a blob, rather than a tree.  The third part states the hash of the blob.  The fourth part states the file's name.
@@ -208,8 +208,10 @@ This says that `HEAD` is pointing at `master`.  `master` is the current branch.
 The file that represents the `master` ref does not exist, because this is the first commit to the repository. Git creates the file at `.git/refs/heads/master` and sets its content to the hash of the commit object:
 
 ```
-a87cc0f39d12e51be8d68eab5cef1d31e8807a1c
+74ac3ad9cde0b265d2b4f1c778b283a6e2ffbafd
 ```
+
+(If you are typing in these Git commands as you read, the hash of your `a1` commit will be different from the hash of mine. Content objects like blobs and trees always hash to the same value. Commits do not, because they include dates and the names of their creators.)
 
 Let's add `HEAD` and `master` to the Git graph:
 
@@ -249,7 +251,7 @@ The user adds the file to Git. This adds a blob containing `2` to the `objects` 
 
 ```bash
 ~/alpha $ git commit -m 'a2'
-          [master ae78f19] a2
+          [master f0af7e6] a2
 ```
 
 The user commits. The steps for the commit are the same as before.
@@ -273,7 +275,7 @@ Second, a new commit object is created.
 
 ```
 tree ce72afb5ff229a39f6cce47b00d1b0ed60fe3556
-parent 30ec3334aaa3954ef44fb6b68cfbf1a225c3d5af
+parent 774b54a193d6cfdd081e581a007d2e11f784b9fe
 author Mary Rose Cook <mary@maryrosecook.com> 1424813101 -0500
 committer Mary Rose Cook <mary@maryrosecook.com> 1424813101 -0500
 
@@ -332,7 +334,7 @@ Third, Git writes the file entries in the tree graph to the index. This, too, re
 Fourth, the content of `HEAD` is set to the hash of the `a2` commit:
 
 ```
-37888c274ecb894b656829d55e88cd086c9b2f72
+f0af7e62679e144bb28c627ee3e8f7bdb235eee9
 ```
 
 Setting the content of `HEAD` to a hash puts the repository in the detached `HEAD` state. Notice in the graph below that `HEAD`, rather than pointing at `master`, points directly at the `a2` commit.
@@ -344,7 +346,7 @@ Setting the content of `HEAD` to a hash puts the repository in the detached `HEA
 ~/alpha $ printf '3' > data/number.txt
 ~/alpha $ git add data/number.txt
 ~/alpha $ git commit -m 'a3'
-          [detached HEAD 05f9ae6] a3
+          [detached HEAD 3645a0e] a3
 ```
 
 The user sets the content of `data/number.txt` to `3` and commits the change. To get the parent of the `a3` commit, Git goes to `HEAD`.  Instead of finding and following a branch ref, it finds and returns the hash of the `a2` commit.
@@ -482,7 +484,7 @@ It gets the giver commit and gets the tree graph that it points at. It writes th
 ~/alpha $ printf '4' > data/number.txt
 ~/alpha $ git add data/number.txt
 ~/alpha $ git commit -m 'a4'
-          [master c6b955e] a4
+          [master 7b7bd9a] a4
 ```
 
 The user sets the content of `number.txt` to `4` and commits the change to `master`.
@@ -493,7 +495,7 @@ The user sets the content of `number.txt` to `4` and commits the change to `mast
 ~/alpha $ printf 'b' > data/letter.txt
 ~/alpha $ git add data/letter.txt
 ~/alpha $ git commit -m 'b3'
-          [deputy d75b998] b3
+          [deputy 982dffb] b3
 ```
 
 The user checks out `deputy`. They set the content of `data/letter.txt` to `b` and commit the change to `deputy`.
@@ -543,8 +545,8 @@ Seventh, the updated index is committed:
 
 ```
 tree 20294508aea3fb6f05fcc49adaecc2e6d60f7e7d
-parent d75b9983183df12a8e745318d0c31cc1782eaf2f
-parent c6b955e6d3d26248112b29176d47b4186a9a20c8
+parent 982dffb20f8d6a25a8554cc8d765fb9f3ff1333b
+parent 7b7bd9a5253f47360d5787095afc5ba56591bfe7
 author Mary Rose Cook <mary@maryrosecook.com> 1425596551 -0500
 committer Mary Rose Cook <mary@maryrosecook.com> 1425596551 -0500
 
@@ -579,7 +581,7 @@ The user checks out `master`. They merge `deputy` into `master`. This fast-forwa
 ~/alpha $ printf '5' > data/number.txt
 ~/alpha $ git add data/number.txt
 ~/alpha $ git commit -m 'b5'
-          [deputy 15b9e42] b5
+          [deputy bd797c2] b5
 ```
 
 The user checks out `deputy`. They set the content of `data/number.txt` to `5` and commit the change to `deputy`.
@@ -590,7 +592,7 @@ The user checks out `deputy`. They set the content of `data/number.txt` to `5` a
 ~/alpha $ printf '6' > data/number.txt
 ~/alpha $ git add data/number.txt
 ~/alpha $ git commit -m 'b6'
-          [master 6deded9] b6
+          [master 4c3ce18] b6
 ```
 
 The user checks out `master`. They set the content of `data/number.txt` to `6` and commit the change to `master`.
@@ -657,12 +659,12 @@ The user integrates the content of the two conflicting versions by setting the c
 
 ```
 0 data/letter.txt 63d8dbd40c23542e740659a7168a0ce3138ea748
-0 data/number.txt ca7bf83ac53a27a2a914bed25e1a07478dd8ef47
+0 data/number.txt 9d607966b721abde8931ddd052181fae905db503
 ```
 
 ```bash
 ~/alpha $ git commit -m 'b11'
-          [master 28118a0] b11
+          [master 251a513] b11
 ```
 
 Seventh, the user commits. Git sees `.git/MERGE_HEAD` in the repository, which tells it that a merge is in progress. It checks the index and finds there are no conflicts. It creates a new commit, `b11`, to record the content of the resolved merge. It deletes the file at `.git/MERGE_HEAD`. This completes the merge.
@@ -693,7 +695,7 @@ The user tells Git to remove `data/letter.txt`.  The file is deleted from the wo
 
 ```bash
 ~/alpha $ git commit -m '11'
-          [master 836b25c] 11
+          [master d14c7d2] 11
 ```
 
 The user commits. As part of the commit, as always, Git builds a tree graph that represents the content of the index. Because `data/letter.txt` is not in the index, it is not included in the tree graph.
@@ -754,7 +756,7 @@ These lines specify that there is a remote repository called `bravo` in the dire
 ~/bravo $ printf '12' > data/number.txt
 ~/bravo $ git add data/number.txt
 ~/bravo $ git commit -m '12'
-          [master 2870e6d] 12
+          [master 94cd04d] 12
 ```
 
 The user goes into the `bravo` repository. They set the content of `data/number.txt` to `12` and commit the change to `master` on `bravo`.
@@ -781,7 +783,7 @@ Third, the content of the concrete ref file at `alpha/.git/refs/remotes/bravo/ma
 Fourth, the content of `alpha/.git/FETCH_HEAD` is set to:
 
 ```
-2870e6dda07ee04da3ad9e30da9bcaf0befbdbc6 branch 'master' of ../bravo
+94cd04d93ae88a1f53a4646532b1e8cdfbc0977f branch 'master' of ../bravo
 ```
 
 This indicates that the most recent fetch command fetched the `12` commit of `master` from `bravo`.
@@ -799,7 +801,7 @@ This indicates that the most recent fetch command fetched the `12` commit of `ma
 
 ```bash
 ~/alpha $ git merge FETCH_HEAD
-          Updating 836b25c..2870e6d
+          Updating d14c7d2..94cd04d
           Fast-forward
 ```
 
@@ -840,7 +842,7 @@ The user moves into the directory above. They clone `alpha` to `charlie`. Clonin
 ~/alpha $ printf '13' > data/number.txt
 ~/alpha $ git add data/number.txt
 ~/alpha $ git commit -m '13'
-          [master 8b35db5] 13
+          [master 3238468] 13
 ```
 
 The user goes back into the `alpha` repository. They set the content of `data/number.txt` to `13` and commit the change to `master` on `alpha`.
@@ -905,7 +907,7 @@ The user goes back into the `alpha` repository. They set up `delta` as a remote 
 ~/alpha $ printf '14' > data/number.txt
 ~/alpha $ git add data/number.txt
 ~/alpha $ git commit -m '14'
-          [master 02d1bb2] 14
+          [master cb51da8] 14
 ```
 
 They set the content of `data/number.txt` to `14` and commit the change to `master` on `alpha`.
@@ -917,7 +919,7 @@ They set the content of `data/number.txt` to `14` and commit the change to `mast
 ~/alpha $ git push delta master
           Writing objects: 100%
           To ../delta
-            8b35db5..02d1bb2 master -> master
+            3238468..cb51da8 master -> master
 ```
 
 They push `master` to `delta`. Pushing has three steps.
