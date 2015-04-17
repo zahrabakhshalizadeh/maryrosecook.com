@@ -709,7 +709,7 @@ The user commits. As part of the commit, as always, Git builds a tree graph that
 
 ```bash
 ~/alpha $ cd ..
-      ~ $ cp -r alpha bravo
+      ~ $ cp -R alpha bravo
 ```
 
 The user copies the contents of the `alpha/` repository to the `bravo/` directory. This produces the following directory structure:
