@@ -6,7 +6,7 @@ permalink: /blog/post/git-in-six-hundred-words
 categories:
   - Uncategorized
 ---
-(This essay is a companion piece to [Gitlet][1], my implementation of Git in JavaScript.)
+(This essay is a companion piece to [Gitlet](http://gitlet.maryrosecook.com), my implementation of Git in JavaScript.)
 
 Imagine you have a directory called `alpha`. It contains a file called `number.txt` that contains the text `first`.
 
@@ -36,4 +36,4 @@ You set the content of `number.txt` to `third`, run `git add numbers.txt` and ru
 
 You run `git push beta red`. This finds the objects for the third commit and copies them from the alpha repository to the beta repository. It points the red branch on the beta repository at the third commit object, and that's it.
 
- [1]: http://gitlet.maryrosecook.com
+(If you would like to learn about the internals of Git in detail, you can read my essay, [Git from the inside out](/blog/post/git-from-the-inside-out).)
