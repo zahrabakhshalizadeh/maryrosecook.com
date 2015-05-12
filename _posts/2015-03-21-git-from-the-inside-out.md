@@ -527,9 +527,9 @@ Second, Git finds the base commit: the most recent ancestor that the receiver an
 
 Third, Git generates the indices for the base, receiver and giver commits from their tree graphs.
 
-Fourth, Git generates a diff that contains the changes required to go from the content of the receiver commit to the content of the giver commit. This diff is a list of file paths that point to a change: add, remove, modify or conflict.
+Fourth, Git generates a diff that combines the changes made to the base by the receiver commit and the giver commit. This diff is a list of file paths that point to a change: add, remove, modify or conflict.
 
-Git gets the list of all the files that appear in the base, receiver or giver indices. For each one, it compares the index entries to find the change that was made to the file. It writes a corresponding entry to the diff. In this case, the diff has two entries.
+Git gets the list of all the files that appear in the base, receiver or giver indices. For each one, it compares the index entries to decide the change to make to the file. It writes a corresponding entry to the diff. In this case, the diff has two entries.
 
 The first entry is for `data/letter.txt`. The content of this file is `a` in the base, `b` in the receiver and `a` in the giver. The content is different in the base and receiver. But it is the same in the base and giver. Git sees that the content was modified by the receiver, but not the giver. The diff entry for `data/letter.txt` is a modification, not a conflict.
 
@@ -618,7 +618,9 @@ Second, Git finds the base commit, `b4`.
 
 Third, Git generates the indices for the base, receiver and giver commits.
 
-Fourth, Git creates a diff that contains the changes required to go from the receiver commit to the giver commit. In this case, the diff contains only one entry: `data/number.txt`. The entry is marked as a conflict because the content for `data/number.txt` is different in the receiver, giver and base.
+Fourth, Git generates a diff that combines the changes made to the base by the receiver commit and the giver commit. This diff is a list of file paths that point to a change: add, remove, modify or conflict.
+
+In this case, the diff contains only one entry: `data/number.txt`. The entry is marked as a conflict because the content for `data/number.txt` is different in the receiver, giver and base.
 
 Fifth, the changes indicated by the entries in the diff are applied to the working copy. For a conflicted area, Git writes both versions to the file in the working copy. The content of `data/number.txt` is set to:
 
