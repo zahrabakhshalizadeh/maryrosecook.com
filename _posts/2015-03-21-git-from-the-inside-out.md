@@ -168,7 +168,7 @@ The sole line in this tree points at the `data` tree.
 ![Tree graph for the `a1` commit](/images/git-from-the-inside-out/1-a1-tree-graph.png)
 <div class="image-caption">Tree graph for the `a1` commit</div>
 
-In the graph above, the `alpha` tree points at the `data` tree. The `data` tree points at the blobs for `data/letter.txt` and `data/number.txt`.
+In the graph above, the `root` tree points at the `data` tree. The `data` tree points at the blobs for `data/letter.txt` and `data/number.txt`.
 
 
 #### Create a commit object
@@ -265,7 +265,7 @@ The index entry for `data/number.txt` has changed.  The old `data` tree no longe
 100664 blob d8263ee9860594d2806b0dfd1bfd17528b0ba2a4 number.txt
 ```
 
-The new `data` tree hashes to a different value from the old `data` tree.  A new `alpha` tree must be created to record this hash:
+The new `data` tree hashes to a different value from the old `data` tree.  A new `root` tree must be created to record this hash:
 
 ```
 040000 tree 40b0318811470aaacc577485777d7a6780e51f0b data
@@ -282,7 +282,7 @@ committer Mary Rose Cook <mary@maryrosecook.com> 1424813101 -0500
 a2
 ```
 
-The first line of the commit object points at the new `alpha` tree object. The second line points at `a1`: the commit's parent. To find the parent commit, Git went to `HEAD`, followed it to `master` and found the commit hash of `a1`.
+The first line of the commit object points at the new `root` tree object. The second line points at `a1`: the commit's parent. To find the parent commit, Git went to `HEAD`, followed it to `master` and found the commit hash of `a1`.
 
 Third, the content of the `master` branch file is set to the hash of the new commit.
 
