@@ -2,6 +2,7 @@
 title: Free programming tutoring for beginners in Manhattan
 author: maryrosecook
 layout: post
+hidden: true
 permalink: /blog/post/programming-tutoring
 ---
 
