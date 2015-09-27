@@ -225,10 +225,8 @@ li a:hover { text-decoration: underline; }
   }
 
 	.grid {
-    min-width: 344px;
-    max-width: 344px;
-		margin-left: 0;
-		margin-right: 0;
+    max-width: 100%;
+    min-width: 100%;
 		padding-left: 0;
 		padding-right: 0;
 	}
@@ -246,7 +244,8 @@ li a:hover { text-decoration: underline; }
 
   .project {
     height: auto;
-    width: 330px;
+    max-width: 100%;
+    min-width: 100%;
   }
 
   .portrait {
