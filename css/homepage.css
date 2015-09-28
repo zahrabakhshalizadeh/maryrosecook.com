@@ -243,7 +243,7 @@ li a:hover { text-decoration: underline; }
   }
 
   .project {
-    height: auto;
+    height: auto !important;
     max-width: 100%;
     min-width: 100%;
   }
