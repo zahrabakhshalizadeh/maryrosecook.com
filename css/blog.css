@@ -7,7 +7,7 @@
 hr { color:#bbb; background-color:#bbb; height:1px; border:0; }
 
 body {
-  font-family: "Gill Sans W01 Light";
+  font-family: "Gill Sans W02 Light";
   font-size: 1.15em;
   color:#000;
   margin:0 5px 0 5px;
@@ -373,7 +373,7 @@ sup a:hover {
 
 @media handheld, only screen and (max-width: 767px) {
   body {
-    font-family: "Gill Sans W01 Book";
+    font-family: "Gill Sans W02 Book";
     font-size: 1.25em;
   }
 
