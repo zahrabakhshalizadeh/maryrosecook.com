@@ -6,14 +6,13 @@ layout: post
 permalink: /blog/post/git-from-the-inside-out
 ---
 
-This essay explains how Git works.  It assumes you understand Git well enough to use it to version control your projects.
+This essay explains how Git works.  (If you'd rather absorb the same information as a talk, you can watch this [video](https://www.youtube.com/watch?v=fCtZWGhQBvo) instead.)
 
-The essay focuses on the graph structure that underpins Git and the way the properties of this graph dictate Git's behavior. Looking at fundamentals, you build your mental model on the truth rather than on hypotheses constructed from evidence gathered while experimenting with the API. This truer model gives you a better understanding of what Git has done, what it is doing, and what it will do.
+The essay assumes you understand Git well enough to use it to version control your projects.  It focuses on the graph structure that underpins Git and the way the properties of this graph dictate Git's behavior. Looking at fundamentals, you build your mental model on the truth rather than on hypotheses constructed from evidence gathered while experimenting with the API. This truer model gives you a better understanding of what Git has done, what it is doing, and what it will do.
 
 The text is structured as a series of Git commands run on a single project. At intervals, there are observations about the graph data structure that Git is built on. These observations illustrate a property of the graph and the behavior that this property produces.
 
 After reading, if you wish to go even deeper into Git, you can look at the [heavily annotated source code](http://gitlet.maryrosecook.com/docs/gitlet.html) of my implementation of Git in JavaScript.
-
 
 ### Create the project
 
