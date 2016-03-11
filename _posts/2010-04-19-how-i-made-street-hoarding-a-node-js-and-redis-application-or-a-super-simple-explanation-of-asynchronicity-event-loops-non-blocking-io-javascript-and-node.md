@@ -22,11 +22,11 @@ There are two elements: the client and the server.
 
 This is an HTML page that lays out the main message and the text box. It is also the JavaScript that runs on the user's browser. The JavaScript has two key functions.
 
-<script src="http://gist.github.com/336937.js?file=longPoll.js"></script>
+<script src="https://gist.github.com/336937.js?file=longPoll.js"></script>
 
 `longPoll()` runs the whole time the user has the webpage open. It takes some data. If this data is null, it is ignored. If it is not null and has a message component, that message is displayed on the webpage through a jQuery update to the message div. Either way, an XMLHttpRequest request is then made with jQuery to the `/latest_message` url on the server. This request takes some time, but it is asynchronous. That is very important. When `longPoll()` is run, the data is processed, the URL request is made and, then, the execution of `longPoll()` continues past the `$.ajax()` call, and control is passed back to the computer processor so it can carry on doing other work. When a success response comes back, the success function inside the `$.ajax()` function is run. This pauses for a moment, then calls `longPoll()` again, passing it the data that the server responded with. Next time through, the message inside this data will be written to the HTML page and the user will see it.
 
-<script src="http://gist.github.com/336937.js?file=tryToSendMessage.js"></script>
+<script src="https://gist.github.com/336937.js?file=tryToSendMessage.js"></script>
 
 `tryToSendMessage()` is called when the user submits a new message via the text field on the HTML page. It first sends an (asynchronous, as always) request to the server to ask it whether the message the user entered has ever been said before. If it has, it just tells the user they aren't being original and finishes. Otherwise, it sends an (asynchronous) request to the `/send_message` URL, passing the user's message as a parameter, thus telling the server to save the message.
 
@@ -50,13 +50,13 @@ That deals with the wonders of non-blocking IO and asynchronicity on the client.
 
 ### The server
 
-<script src="http://gist.github.com/336937.js?file=latest_message.js"></script>
+<script src="https://gist.github.com/336937.js?file=latest_message.js"></script>
 
-There is some crazy fucking shit going on in the first line. It uses fu, an imported piece of JavaScript code that acts as a mini router. When you pass a url and a function to `fu.get()`, you are saying: when the Node.js server gets a request that was sent to this URL, run this function. 
+There is some crazy fucking shit going on in the first line. It uses fu, an imported piece of JavaScript code that acts as a mini router. When you pass a url and a function to `fu.get()`, you are saying: when the Node.js server gets a request that was sent to this URL, run this function.
 
 #### A digression on how the router works that explains some things about JavaScript and the Street Hoarding code but that it's not really necessary to read to get the main points of this article
 
-<script src="http://gist.github.com/336937.js?file=fu.js"></script>
+<script src="https://gist.github.com/336937.js?file=fu.js"></script>
 
 `fu.get()` takes a URL and a function and adds the function to a hash, keyed with the URL. `fu.listen()` starts the server defined by the server variable and makes it listen to events coming to the passed host (probably localhost) on the passed port. We've eaten our way around the jam filling, so it's time to get sticky fingers.
 
@@ -68,11 +68,11 @@ Finally, the handler function in `getMap` that corresponded to the requested url
 
 #### Latest message
 
-<script src="http://gist.github.com/336937.js?file=latest_message.js"></script>
+<script src="https://gist.github.com/336937.js?file=latest_message.js"></script>
 
-So, the function passed to `fu.get()` extracts the since parameter that the client sent with the request. This indicates when the client last received a user message from the server. If the server has received a message from a user since then, `sendLatestMessageToClient()` is called. 
+So, the function passed to `fu.get()` extracts the since parameter that the client sent with the request. This indicates when the client last received a user message from the server. If the server has received a message from a user since then, `sendLatestMessageToClient()` is called.
 
-<script src="http://gist.github.com/336937.js?file=sendLatestMessageToClient.js"></script>
+<script src="https://gist.github.com/336937.js?file=sendLatestMessageToClient.js"></script>
 
 `sendLatestMessageToClient()` creates a new Redis client. It calls `redisClient.stream.addListener()` to connect the Redis client to the Redis server, passing a function as the second argument. Note the asynchronicity. The Redis library does not hang around waiting while the Redis client connects to the Redis server. Instead, behind the scenes, it passes control back to the server event loop which, at some point in the future, gets an I've Finished My Work And My Name Is The Redis Client Connection Function event which then calls the function passed as the second argument.
 
@@ -80,21 +80,21 @@ This function calls `redisClient.lindex()` which retrieves the first item in the
 
 #### New message
 
-<script src="http://gist.github.com/336937.js?file=send_message.js"></script>
+<script src="https://gist.github.com/336937.js?file=send_message.js"></script>
 
 The function passed to `fu.get()` extracts the message from the request and calls `storeMessage()`, passing the message and yet another function to call back later.
 
-<script src="http://gist.github.com/336937.js?file=storeMessage.js"></script>
+<script src="https://gist.github.com/336937.js?file=storeMessage.js"></script>
 
 `storeMessage()` goes through the familiar routine of creating a Redis client, requesting a connection to the Redis server, calling a Redis function (`redisClient.lpush`, this time), closing the Redis client and calling back the function passed as the second argument which:
 
 Wait, stop a second. Do you remember how I rather trailed off five paragraphs ago when I wrote, "If the server has received a message from a user since then, `sendLatestMessageToClient()` is called"? By which I mean, I didn't say what happened if the server had not received a new message since the last message was sent to the user. Let's have a look.
 
-<script src="http://gist.github.com/336937.js?file=latest_message.js"></script>
+<script src="https://gist.github.com/336937.js?file=latest_message.js"></script>
 
 Right. Latest message requests that would normally be answered with the message that the client is already displaying are held open. I know that was a long sentence, and this is a long article, and you are tired, but I hope that those last two words didn't slip by you. Held open. A response is not sent immediately. Instead, a new item is pushed onto the `messageRequests` array: a hash of the `res` object and the `sendLatestMessageToClient()` function.
 
-<script src="http://gist.github.com/336937.js?file=send_message.js"></script>
+<script src="https://gist.github.com/336937.js?file=send_message.js"></script>
 
 So, back to the `/send_message` code to see how it deals with the held message requests. The code extracts the user's message, stores it and sends a success response back to the client. For each message request that has been pushed onto `messageRequests`, `sendLatestMessageToClient()` is called. This sends the latest message (probably the one received a few lines ago) back to the client, thus ending the request. This is Comet: the client sends a request and no response is sent until there is something useful to send, thus the request is held open.
 

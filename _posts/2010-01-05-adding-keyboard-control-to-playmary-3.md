@@ -12,7 +12,7 @@ Up until now, you would click on songs to play and pause them, and when one song
 
 I've added some new code that lets you move through the playlist with the left and right arrows, and pause and play the current song with the space bar:
 
-<script src="http://gist.github.com/268961.js?file=gistfile1.js"></script>
+<script src="https://gist.github.com/268961.js?file=gistfile1.js"></script>
 
 Code adapted from the source in [this article][2].
 
