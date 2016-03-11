@@ -39,17 +39,17 @@ Development tools: [TextMate][53] (code editor), [YourSQL][54] (desktop SQL clie
  [3]: http://www.facebook.com/profile.php?id=502815370
  [4]: http://news.ycombinator.com/user?id=maryrosecook
  [5]: http://www.barbelith.com/profile/5420
- [6]: http://www.youtube.com/watch?v=2cp1eQnJqiI
+ [6]: https://www.youtube.com/watch?v=2cp1eQnJqiI
  [7]: http://profile.myspace.com/index.cfm?fuseaction=user.viewprofile&friendID=4362635
- [8]: http://www.youtube.com/watch?v=-z_5js8BYms
- [9]: http://www.youtube.com/watch?v=mht8-fuOjSw
+ [8]: https://www.youtube.com/watch?v=-z_5js8BYms
+ [9]: https://www.youtube.com/watch?v=mht8-fuOjSw
  [10]: http://en.wikipedia.org/wiki/Xiu_Xiu
  [11]: http://en.wikipedia.org/wiki/Dilute
  [12]: http://www.amazon.com/Real-Fiction-Fakes/dp/B00000219E/ref=pd_bbs_1/103-3933798-9039062?ie=UTF8&s=music&qid=1193864001&sr=8-1
  [13]: http://en.wikipedia.org/wiki/Huggy_Bear
  [14]: http://en.wikipedia.org/wiki/The_Need
- [15]: http://www.youtube.com/watch?v=wN3PLKDQZQI
- [16]: http://www.youtube.com/watch?v=XAb68vFiDrA
+ [15]: https://www.youtube.com/watch?v=wN3PLKDQZQI
+ [16]: https://www.youtube.com/watch?v=XAb68vFiDrA
  [17]: http://www.circletakesthesquare.com/
  [18]: http://www.convergecult.com/
  [19]: http://www.heartcorerecords.net/distro/cds.html

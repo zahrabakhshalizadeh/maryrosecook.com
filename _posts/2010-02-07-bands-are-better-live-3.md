@@ -22,9 +22,9 @@ Audio recordings capture a good portion of the musical advantages of live gigs. 
 
 I'm not quite sure where this is leading.
 
-Famous bands are well documented and, just as importantly, well distributed. It is easy to buy a Bruce Springsteen or Bob Dylan live album. What if every gig was recorded and then put up on the 'net? A lead going from the sound desk into a cassette recorder and, later, a  
+Famous bands are well documented and, just as importantly, well distributed. It is easy to buy a Bruce Springsteen or Bob Dylan live album. What if every gig was recorded and then put up on the 'net? A lead going from the sound desk into a cassette recorder and, later, a
 lead from the cassette recorder to a computer would be enough. A quick upload to a website and it would be available to everyone.
 
  [1]: http://en.wikipedia.org/wiki/The_Bootleg_Series_Vol._4:_Bob_Dylan_Live_1966,_The_%22Royal_Albert_Hall%22_Concert
- [2]: http://www.youtube.com/watch?v=Tv-_4xNEDck
+ [2]: https://www.youtube.com/watch?v=Tv-_4xNEDck
  [3]: http://live.playmary.com
