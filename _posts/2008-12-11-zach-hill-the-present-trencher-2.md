@@ -8,11 +8,11 @@ categories:
 ---
 [Trencher][1] were kind of good, but they only really have two songs: the doom one and the grind one. Here are the band:
 
-[<img src='http://farm4.static.flickr.com/3098/3101033154_5b7150a87f.jpg' alt="Trencher 1" width="600" border='0' />][2]
+[<img src='https://farm4.static.flickr.com/3098/3101033154_5b7150a87f.jpg' alt="Trencher 1" width="600" border='0' />][2]
 
 [The Present][3] were half avant garde plinky plonky noise and half echoed-out rock music. The drummer drummed on his knees. The band had a wonderfully large amount of equipment on stage with them:
 
-[<img src="http://farm4.static.flickr.com/3133/3100196997_eb49cf9d41.jpg" alt="The present 1" width="600" border='0' />][4]
+[<img src="https://farm4.static.flickr.com/3133/3100196997_eb49cf9d41.jpg" alt="The present 1" width="600" border='0' />][4]
 
 [Zach Hill][5], the drummer from Hella, was the closest I've come to religious music. Over the last few years. his drumming has become a boring party trick. He's like someone who still thinks the war is on, but instead of the war, it's Spencer Seim.
 

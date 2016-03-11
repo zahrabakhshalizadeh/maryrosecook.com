@@ -6,7 +6,7 @@ permalink: /blog/post/london-g20-climate-camp-protest-photos-2
 categories:
   - Uncategorized
 ---
-<img src="http://farm4.static.flickr.com/3550/3406743498_427497be98_d.jpg" style="" width="600" />
+<img src="https://farm4.static.flickr.com/3550/3406743498_427497be98_d.jpg" style="" width="600" />
 
 [See the whole set][1].
 
