@@ -12,6 +12,6 @@ In March, I posted [What I've been working on][1]. In it, I showed four images o
 
 Watch the trailer:
 
- [1]: http://maryrosecook.com/post/what-ive-been-working-on
+ [1]: /post/what-ive-been-working-on
  [2]: http://emptyblack.com
  [3]: http://emptyblack.com/play.html

@@ -6,7 +6,7 @@ permalink: /blog/post/barcamp-london-7-2
 categories:
   - Uncategorized
 ---
-<img src="http://maryrosecook.com/images/IMG_1610.JPG" width="600" />
+<img src="/images/IMG_1610.JPG" width="600" />
 
 I helped organise this Autumn's London Barcamp. It was at the IBM building on the Southbank. We provided food, drink, some rooms, a bit of floor to sleep on and a blanket. Then, each of the 200 people who came did a twenty-minute session on something they know about. We had nine sessions running every half an hour from 10 a.m. on Saturday to 5pm on Sunday and there were lots of interesting discussions in the corridors.
 

@@ -33,7 +33,7 @@ And I found that fundamental operations on the `.git` directory could be compose
 These basic data types and operations seemed to express something of the fundamental nature of Git. I've had this feeling before when working on novel projects. But it was funny to feel the sensation of discovery when working on something that already existed.
 
  [1]: http://gitlet.maryrosecook.com
- [2]: http://maryrosecook.com/blog/post/git-in-six-hundred-words
+ [2]: /blog/post/git-in-six-hundred-words
  [3]: https://wildlyinaccurate.com/a-hackers-guide-to-git
  [4]: https://www.quora.com/How-does-Git-merge-work/answer/Anders-Kaseorg?srid=I5Y&#038;share=1
  [5]: http://codicesoftware.blogspot.com/2011/09/merge-recursive-strategy.html

@@ -11,7 +11,7 @@ The talk is a deep dive into the innards of Git.  It focuses on the graph struct
 
 <div class="video-container"><iframe width="600" height="338" src="https://www.youtube.com/embed/fCtZWGhQBvo?rel=0" frameborder="0" allowfullscreen></iframe></div>
 
-If you'd rather digest the same information as six thousand words of prose, read my essay, [Git from the inside out](http://maryrosecook.com/blog/post/git-from-the-inside-out).
+If you'd rather digest the same information as six thousand words of prose, read my essay, [Git from the inside out](/blog/post/git-from-the-inside-out).
 
 If you'd rather digest the same information as an implementation of Git in a thousand lines of heavily-annotated JavaScript, read my [source code for Gitlet](http://gitlet.maryrosecook.com/docs/gitlet.html).
 

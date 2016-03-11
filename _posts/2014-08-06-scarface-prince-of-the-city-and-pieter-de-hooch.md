@@ -24,7 +24,7 @@ Sidney Lumet achieves the same effect of a living world. But, his camera is most
 
 Pieter de Hooch achieves the same effect in his painting, Paying the Hostess. Look at how light in the sky on the far left shines in through a hidden window, through a mostly obscured back room and finally falls on the wall on the far right. The light makes real the things we can't see. It, too, is better than de Palma because it achieves its effect by making something disappear and then reappear. But, remarkably, de Hooch does it with a still image. No moving objects. No moving frame. Just moving light.
 
-<img src="http://maryrosecook.com/images/payingthehostess.jpg" width="600" />
+<img src="/images/payingthehostess.jpg" width="600" />
 
  [1]: http://en.wikipedia.org/wiki/Scarface_(1983_film)
  [2]: http://en.wikipedia.org/wiki/Prince_of_the_City
