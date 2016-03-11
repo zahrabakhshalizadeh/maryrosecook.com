@@ -9,7 +9,7 @@ enclosure:
         http://2009.r2.co.nz/20090219/bruce-s.mp3
         60546846
         audio/mpeg
-        
+
 categories:
   - Uncategorized
 ---
@@ -58,9 +58,9 @@ Bruce Sterling at Webstock 2009, excerpt:
  [1]: http://maryrosecook.playmary.com/track/desark_mysaddleiswaitingcmonjustonit
  [2]: http://maryrosecook.playmary.com/track/musicforone_forwardsandback
  [3]: http://www.webstock.org.nz/talks/events/webstock-09/
- [4]: http://vimeo.com/5102055
+ [4]: https://vimeo.com/5102055
  [5]: http://maryrosecook.playmary.com/track/godspeedyoublackemperor_thedeadflagblues
  [6]: http://2009.r2.co.nz/20090219/bruce-s.mp3
  [7]: http://
- [8]: http://vimeo.com/4955251
+ [8]: https://vimeo.com/4955251
  [9]: http://www.wired.com/beyond_the_beyond/2009/03/what-bruce-ster/
