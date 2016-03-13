@@ -10,7 +10,7 @@ Many functional programming articles teach abstract functional techniques. That 
 
 The first section of the article takes short, data transforming loops and translates them into functional maps and reduces. The second section takes longer loops, breaks them up into units and makes each unit functional. The third section takes a loop that is a long series of successive data transformations and decomposes it into a functional pipeline.
 
-The examples are in Python, because many people find Python easy to read. A number of the examples eschew pythonicity in order to demonstrate functional techniques common to many languages: map, reduce, pipeline.
+The examples are in Python, because many people find Python easy to read. A number of the examples eschew pythonicity in order to demonstrate functional techniques common to many languages: map, reduce, pipeline. All of the examples are in Python 2.
 
 ### A guide rope
 
@@ -530,7 +530,7 @@ Think of the race. Break code into functions. Make those functions functional. T
 
 Think of the bands. Turn a sequence of operations into a pipeline.
 
-  
+
 
 
 <sup>1</sup> An immutable piece of data is one that cannot be changed. Some languages, like Clojure, make all values immutable by default. Any "mutating" operations copy the value, change it and pass back the changed copy. This eliminates bugs that arise from a programmer's incomplete model of the possible states their program may enter.
