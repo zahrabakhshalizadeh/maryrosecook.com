@@ -21,14 +21,14 @@ Ignore all that. Functional code is characterised by one thing: the absence of s
 This is an unfunctional function:
 
 <pre class="prettyprint">a = 0
-def increment1():
+def increment():
     global a
     a += 1
 </pre>
 
 This is a functional function:
 
-<pre class="prettyprint">def increment2(a):
+<pre class="prettyprint">def increment(a):
     return a + 1
 </pre>
 
