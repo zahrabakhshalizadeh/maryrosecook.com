@@ -1,1 +1,1 @@
-rsync -au _site/ dh:maryrosecook.com/
+rsync -au _site/ do:/var/www/maryrosecook.com/
