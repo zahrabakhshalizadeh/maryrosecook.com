@@ -16,4 +16,4 @@ github_username:  maryrosecook
 gems: [jekyll-paginate]
 markdown: redcarpet
 redcarpet:
-  extensions: [smart, footnotes]
+  extensions: [smart, footnotes, with_toc_data]
