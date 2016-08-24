@@ -79,7 +79,7 @@ I spend part of my time working with students who have asked me for help.  My go
 
 #### Escalation process
 
-* Make the student feel [held](#feeling-held) first.  Then suggest the [escalation process](https://github.com/makersacademy/course/blob/master/pills/escalation_process.md). [The link is to an internal document. It describes a process that helps the student help themselves.  It suggests: gathering words to describe the problem, Googling, talking to a pair programming partner, and asking on the student Slack channel.]
+* Make the student feel [held](#feeling-held) first.  Then suggest the [escalation process](https://github.com/makersacademy/course/blob/master/pills/escalation_process.md). [This link isn't publically accessible, I'm afraid.  It points to an internal Makers Academy document.  The document describes a process that helps the student help themselves.  It suggests: gathering words to describe the problem, Googling, talking to a pair programming partner, and asking on the student Slack channel.]
 
 #### Identify and train a developer skill
 
