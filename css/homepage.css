@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Gill Sans W02 Book";
+  font-family: "Gill Sans W01 Book";
   margin: 0px;
   font-size: 16px;
   text-rendering: optimizeLegibility;
@@ -216,7 +216,7 @@ li a:hover { text-decoration: underline; }
 
 @media handheld, only screen and (max-width: 767px) {
   body {
-    font-family: "Gill Sans W02 Book";
+    font-family: "Gill Sans W01 Book";
     font-size: 18px;
   }
 
