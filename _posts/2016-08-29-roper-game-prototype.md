@@ -9,6 +9,8 @@ For a few days last week, I went to the reading room at the Wellcome Trust and w
 
 <div class="video-container"><iframe width="600" height="338" src="https://www.youtube.com/embed/ndbka06mkc0?rel=0" frameborder="0" allowfullscreen></iframe></div>
 
+(Cinematography and set design by Lauren Karchmer, my wife.)
+
 Sam, my friend and colleague at Makers Academy told me about the reading room.  It's great.  There are lots of interesting books there, comfy seats and a palatial staircase covered in throw pillows.
 
 I had a few goals with the prototype.  First, to try out a Bionic Commando slash Spiderman roping mechanic that I'd had in my head.  I wanted to use Box2D for the rope physics. I wanted the player to not be constrained to special roping points or angles.   Second, I wanted to keep to a discipline of prototyping an idea and then setting it aside, rather than letting it potter along as a project that eventually ran out of steam.
