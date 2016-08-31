@@ -1,5 +1,5 @@
 ---
-title: Responding to a student's request for help
+title: What I do when a student asks for help
 author: maryrosecook
 layout: post
 permalink: /blog/post/responding-to-a-students-request-for-help
@@ -7,7 +7,7 @@ permalink: /blog/post/responding-to-a-students-request-for-help
 
 For the last three months, I've been working at <a href="http://makersacademy.com">Makers Academy</a> as a programming coach.
 
-I spend part of my time working with students who have asked me for help.  My goal in these interactions is for the student to learn to learn.  To improve my ability to help with this, I wrote down a process that I follow.  The process has changed as I've learnt more.  Here's the latest version:
+I spend part of my time working with students who have asked me for help.  My goal is for the student to learn to learn.  To improve my ability to help with this, I wrote down a process that I follow.  The process has changed as I've learnt more.  Here's the latest version:
 
 ### Process
 
@@ -79,23 +79,23 @@ I spend part of my time working with students who have asked me for help.  My go
 
 #### Escalation process
 
-* Make the student feel [held](#feeling-held) first.  Then suggest the [escalation process](https://github.com/makersacademy/course/blob/master/pills/escalation_process.md). [This link isn't publically accessible, I'm afraid.  It points to an internal Makers Academy document.  The document describes a process that helps the student help themselves.  It suggests: gathering words to describe the problem, Googling, talking to a pair programming partner, and asking on the student Slack channel.]
+* Make the student feel [held](#feeling-held) first.  Then suggest the [escalation process](https://github.com/makersacademy/course/blob/master/pills/escalation_process.md). [This link isn't publicly accessible, I'm afraid.  It points to an internal Makers Academy document.  The document describes a process that helps the student help themselves.  It suggests: gathering words to describe the problem, Googling, talking to a pair programming partner, and asking on the student Slack channel.]
 
 #### Identify and train a developer skill
 
-For example: diagramming, delegating behaviour, breaking classes into single responsibilities, debugging asynchronous code, 5 whys, falsifying assumptions, following the flow etc.
+For example: diagramming, delegating behaviour, breaking classes into single responsibilities, debugging asynchronous code, 5 whys, falsifying assumptions, following the flow.
 
 * I can identify a skill that's lacking by looking at how the student makes their request, how they've tried to find the problem and what solutions they've tried.
 
-* To set the student's expectations for the interaction, name the skill I'm going to help them train.  Suggest they employ the skill to solve the problem.  Name the skill at the end of the session to help them remember to use it.
+* To set the student's expectations, name the skill I'm going to help them train.  Suggest they employ the skill to solve the problem.  Name the skill at the end of the session to help them remember to use it.
 
-* Figure out how much to scaffold the skill.  Maybe the first time that I suggest diagramming, I'll need to walk the student through it.  But, in future interactions, I should be able to reduce the scaffolding.
+* Figure out how much to scaffold the skill.  Maybe the first time that I suggest diagramming, I'll need to walk the student through it.  But, in the future, I should be able to reduce the scaffolding.
 
 #### Identify and train a developer behaviour
 
 * For example: the [XP values](http://www.extremeprogramming.org/values.html).
 
-#### Help the student clarify their problem explanation
+#### Help the student clarify their explanation of their problem
 
 * Maybe ask them questions to clarify their request for help.
 
@@ -119,7 +119,7 @@ For example: diagramming, delegating behaviour, breaking classes into single res
 
 #### Open process (vs closed)
 
-* An open process is one that, though directed, helps the student to learn more than a closed process.  For example, letting the student type, rather than typing myself, or saying "can you use the filter function for that?" rather than "type dot f i l t e r ...".
+* An open process is one that helps the student to learn more than a closed process.  For example, letting the student type, rather than typing myself, or saying "can you use the filter function for that?" rather than "type dot f i l t e r ...".
 
 ### Traps I sometimes fall into
 
@@ -127,4 +127,4 @@ For example: diagramming, delegating behaviour, breaking classes into single res
 
 * Asking breadcrumb questions that really just require reading my mind.
 
-* Not having a clear plan for where I want the interaction to go, and jumping between methods of helping the student.
+* Not having a clear plan, and jumping between methods of helping the student.
