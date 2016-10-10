@@ -93,7 +93,7 @@ For example: diagramming, delegating behaviour, breaking classes into single res
 
 #### Identify and train a developer behaviour
 
-* For example: the [XP values](http://www.extremeprogramming.org/values.html).
+* For example, one of the [XP values](http://www.extremeprogramming.org/values.html).
 
 #### Help the student clarify their explanation of their problem
 
@@ -115,7 +115,7 @@ For example: diagramming, delegating behaviour, breaking classes into single res
 
 #### Feeling held
 
-* Reassure the student that I've heard and understood their request and that I care about it.  This may involve explaining why I'm not giving them the answer to their request.
+* Reassure the student that I've heard and understood their request.  Reassure the student that I care about them and their request.  This may involve explaining why I'm not giving them the answer.
 
 #### Open process (vs closed)
 
