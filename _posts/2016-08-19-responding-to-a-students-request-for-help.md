@@ -39,7 +39,7 @@ I spend part of my time working with students who have asked me for help.  My go
 
 #### The student doesn't know how to implement a piece of functionality, and neither do I
 
-* Suggest they employ the [developer skill](#identify-and-train-a-developer-skill) that I would use in this situation.  Stay with them as they apply the skill.  Give instructions that are as [open](#open-process-vs-closed) as possible.  Suggest they work on their own once it becomes clear they are on the right track.
+* Suggest they employ the [developer skill](#identify-and-train-a-developer-skill) that I would use in this situation.  Stay with them as they apply the skill.  Give instructions that are as [open](#open-process-vs-closed) as possible.
 
 #### The student wants my opinion on their idea
 
@@ -65,7 +65,7 @@ I spend part of my time working with students who have asked me for help.  My go
 
 #### The student has a bug for which I can't predict the likely cause
 
-* Run through the [debugging process](#debugging-process) with the student, giving [open](#open-process-vs-closed) suggestions like "maybe the server is erroring when it responds to the Ajax request" and letting the student worry about the details.  Suggest they work on their own once it becomes clear they are on the right track.
+* Run through the [debugging process](#debugging-process) with the student, giving [open](#open-process-vs-closed) suggestions like "maybe the server is erroring when it responds to the Ajax request" and letting the student worry about the details.
 
 #### The student has a bug that will take them a long time to fix
 
