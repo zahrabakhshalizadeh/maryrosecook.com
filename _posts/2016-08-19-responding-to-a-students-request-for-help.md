@@ -43,8 +43,6 @@ I spend part of my time working with students who have asked me for help.  My go
 
 #### The student wants my opinion on their idea
 
-* Maybe suggest they follow the [escalation process](#escalation-process).
-
 * Maybe [identify and train a developer skill](#identify-and-train-a-developer-skill) like fast prototyping or diagramming.
 
 * Maybe [identify and train a developer behaviour](#identify-and-train-a-developer-behaviour) like reflection.
@@ -60,8 +58,6 @@ I spend part of my time working with students who have asked me for help.  My go
 #### The student has a bug they should be able to solve on their own
 
 * Maybe suggest the student follow the [debugging process](#debugging-process).
-
-* Maybe suggest they follow the [escalation process](#escalation-process).
 
 #### The student has a bug they don't have the background knowledge to fix on their own
 
