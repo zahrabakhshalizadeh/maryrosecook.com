@@ -350,7 +350,7 @@ Setting the content of `HEAD` to a hash puts the repository in the detached `HEA
 
 The user sets the content of `data/number.txt` to `3` and commits the change. Git goes to `HEAD` to get the parent of the `a3` commit.  Instead of finding and following a branch ref, it finds and returns the hash of the `a2` commit.
 
-Git updates `HEAD` to point directly at the hash of the new `a3` commit. The repository is still in the detached `HEAD` state. It is not on a branch because no commit points at either `a3` or one of its descendants. This means it is easy to lose.
+Git updates `HEAD` to point directly at the hash of the new `a3` commit. The repository is still in the detached `HEAD` state. The commit is not on a branch because no branch ref points at either `a3` or one of its descendants. This means it is easy to lose.
 
 From now on, trees and blobs will mostly be omitted from the graph diagrams.
 
