@@ -29,19 +29,21 @@ I spend part of my time working with students who have asked me for help.  My go
 
 * Maybe suggest they follow the [escalation process](#escalation-process).
 
-* Maybe suggest they look it up.  Make them feel [held](#feeling-held).
+* Maybe suggest they [Google their question](#google-it).
 
 #### The student doesn't know how to implement a piece of functionality
 
 * Maybe suggest they follow the [escalation process](#escalation-process).
 
-* Maybe figure out a technique that will solve their problem.  [Suggest reading material](#suggest-reading-material) on the topic.
-
 * Maybe [identify and train a developer skill](#identify-and-train-a-developer-skill) that will help them implement the functionality.
+
+* Maybe [suggest reading material](#suggest-reading-material) on a topic that will solve their problem.
 
 #### The student doesn't know how to implement a piece of functionality, and neither do I
 
-* Suggest they employ the [developer skill](#identify-and-train-a-developer-skill) that I would use in this situation.  Stay with them as they apply the skill.  Give instructions that are as [open](#open-process-vs-closed) as possible.
+* Maybe suggest they follow the [escalation process](#escalation-process).
+
+* [Identify and train a developer skill](#identify-and-train-a-developer-skill).
 
 #### The student wants my opinion on their idea
 
@@ -51,8 +53,6 @@ I spend part of my time working with students who have asked me for help.  My go
 
 * Maybe [identify and train a developer behaviour](#identify-and-train-a-developer-behaviour) like reflection.
 
-* Maybe, if the idea is bad, guide them towards another idea.
-
 #### The student wants an intro to a topic
 
 * Maybe suggest they follow the [escalation process](#escalation-process).
@@ -61,7 +61,7 @@ I spend part of my time working with students who have asked me for help.  My go
 
 #### The student has a bug they should be able to solve on their own
 
-* Maybe suggest the student follow the [debugging process](#debugging-process).
+* Maybe suggest they follow the [debugging process](#debugging-process).
 
 #### The student has a bug they don't have the background knowledge to fix on their own
 
@@ -71,11 +71,11 @@ I spend part of my time working with students who have asked me for help.  My go
 
 #### The student has a bug for which I can't predict the likely cause
 
-* Run through the [debugging process](#debugging-process) with the student, giving [open](#open-process-vs-closed) suggestions like "maybe the server is erroring when it responds to the Ajax request" and letting the student worry about the details.
+* Run through a partly [closed](#open-process-vs-closed) [debugging process](#debugging-process) with the student.
 
 #### The student has a bug that will take them a long time to fix
 
-* Debug and fix the problem for them.  Whilst keeping the process efficient, try and make it as [open](#open-process-vs-closed) as possible.  Try and explain how I know to try the things I'm trying.
+* [Solve the student's problem](#solve-the-problem). Make the process as [open](#open-process-vs-closed) as possible.
 
 ### Solutions
 
@@ -95,7 +95,7 @@ For example: diagramming, delegating behaviour, breaking classes into single res
 
 * To set the student's expectations, name the skill I'm going to help them train.  Suggest they employ the skill to solve the problem.  Name the skill at the end of the session to help them remember to use it.
 
-* Figure out how much to scaffold the skill.  Maybe the first time that I suggest diagramming, I'll need to walk the student through it.  But, in the future, I should be able to reduce the scaffolding.
+* Figure out how [open](#open-process-vs-closed) the process should be.  Maybe the first time that I suggest diagramming, I'll need to walk the student through it.  But, in the future, I should be able to give less detailed support.
 
 #### Identify and train a developer behaviour
 
