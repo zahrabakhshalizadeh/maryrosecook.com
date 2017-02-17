@@ -23,7 +23,7 @@ I spend part of my time working with students who have asked me for help.  My go
 
 * Maybe suggest they follow the [escalation process](#escalation-process).
 
-* [Help the student clarify their explanation of their problem](#Help-the-student-clarify-their-explanation-of-their-problem).
+* [Help the student clarify their explanation of their problem](#help-the-student-clarify-their-explanation-of-their-problem).
 
 #### The student wants a concrete piece of information
 
