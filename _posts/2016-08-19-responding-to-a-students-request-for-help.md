@@ -130,11 +130,3 @@ For example: diagramming, delegating behaviour, breaking classes into single res
 #### Open process (vs closed)
 
 * An open process is one that helps the student to learn more than a closed process.  For example, letting the student type, rather than typing myself, or saying "can you use the filter function for that?" rather than "type dot f i l t e r ...".
-
-### Traps I sometimes fall into
-
-* Giving in to the student's desire to get a solution NOW.  In these cases, I should try to get them out of their writing code brain and into their observing brain.
-
-* Asking breadcrumb questions that really just require reading my mind.
-
-* Not having a clear plan, and jumping between methods of helping the student.
