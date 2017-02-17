@@ -111,6 +111,10 @@ For example: diagramming, delegating behaviour, breaking classes into single res
 
 * Suggest a blog post. Or suggest a pill [an internal document that gives a condensed introduction to a topic].
 
+#### Solve the problem
+
+* If the student has a really tricky problem that will delay them for a long time, it's often better to just solve it for them so they can get going again.  Whilst keeping the process efficient, try and make it as [open](#open-process-vs-closed) as possible.  Try and explain how I know to try the things I'm trying.
+
 ### Definitions
 
 #### Feeling held
