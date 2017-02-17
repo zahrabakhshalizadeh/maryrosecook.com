@@ -11,9 +11,27 @@ I spend part of my time working with students who have asked me for help.  My go
 
 ### Process
 
-1. Map the student's request for help to one of the [underlying problems](#problems-underlying-a-request-for-help) listed below.
+1. Map the student's request for help to one of the [underlying problems](#problems-underlying-a-request-for-help):
+  * [No clear problem explanation](#the-student-doesnt-have-a-clear-problem-explanation)
+  * [Want a concrete piece of information](#the-student-wants-a-concrete-piece-of-information)
+  * [Not clear on how to implement a piece of functionality](#the-student-doesnt-know-how-to-implement-a-piece-of-functionality)
+  * [Not clear about how to implement a piece of functionality, and neither am I](#the-student-doesnt-know-how-to-implement-a-piece-of-functionality-and-neither-do-i)
+  * [Want my opinion of their idea](#the-student-wants-my-opinion-on-their-idea)
+  * [Want an intro to a topic](#the-student-wants-an-intro-to-a-topic)
+  * [A bug they should be able to solve on their own](#the-student-has-a-bug-they-should-be-able-to-solve-on-their-own)
+  * [A bug they don't have the background knowledge to fix on their own](#the-student-has-a-bug-they-dont-have-the-background-knowledge-to-fix-on-their-own)
+  * [A bug for which I can't predict the likely cause](#the-student-has-a-bug-for-which-i-cant-predict-the-likely-cause)
+  * [A bug that will take them a long time to fix](#the-student-has-a-bug-that-will-take-them-a-long-time-to-fix)
 
-2. Apply one of the suggested [solutions](#solutions).
+2. Apply one of the suggested [solutions](#solutions):
+  * [Suggest the escalation process](#suggest-the-escalation-process)
+  * [Help the student clarify their explanation of their problem](#help-the-student-clarify-their-explanation-of-their-problem)
+  * [Suggest they Google it](#suggest-they-google-it)
+  * [Suggest the debugging process](#suggest-the-debugging-process)
+  * [Suggest reading material](#suggest-reading-material)
+  * [Identify and train a developer skill](#identify-and-train-a-developer-skill)
+  * [Identify and train a developer behaviour](#identify-and-train-a-developer-behaviour)
+  * [Solve their problem](#solve-their-problem)
 
 3. Ask the student for feedback on my help.
 
@@ -79,13 +97,29 @@ I spend part of my time working with students who have asked me for help.  My go
 
 ### Solutions
 
-#### Escalation process
+#### Suggest the escalation process
 
 * Make the student feel [held](#feeling-held) first.  Then suggest the [escalation process](https://github.com/makersacademy/course/blob/master/pills/escalation_process.md). (This link isn't publicly accessible, I'm afraid.  It points to an internal Makers Academy document.  The document describes a process that helps the student help themselves.  It suggests: gathering words to describe the problem, Googling, talking to a pair programming partner, and asking on the student Slack channel.)
 
-#### Google it
+#### Help the student clarify their explanation of their problem
+
+* Maybe ask them questions to clarify their request for help.
+
+* Maybe use [5 whys](https://en.wikipedia.org/wiki/5_Whys).
+
+#### Suggest they Google it
 
 * Make the student feel [held](#feeling-held) first.  Then suggest they Google their problem.
+
+#### Suggest the debugging process
+
+1. Tighten the loop.  This means following the flow of execution to find the line of code that's causing the bug.
+
+2. Get visibility (aka `p` everywhere).  This means using stdout or a debugger to see the current state of the program.
+
+#### Suggest reading material
+
+* Suggest a blog post. Or suggest a pill [an internal document that gives a condensed introduction to a topic].
 
 #### Identify and train a developer skill
 
@@ -101,23 +135,7 @@ For example: diagramming, delegating behaviour, breaking classes into single res
 
 * For example, one of the [XP values](http://www.extremeprogramming.org/values.html).
 
-#### Help the student clarify their explanation of their problem
-
-* Maybe ask them questions to clarify their request for help.
-
-* Maybe use [5 whys](https://en.wikipedia.org/wiki/5_Whys).
-
-#### Debugging process
-
-1. Tighten the loop.  This means following the flow of execution to find the line of code that's causing the bug.
-
-2. Get visibility (aka `p` everywhere).  This means using stdout or a debugger to see the current state of the program.
-
-#### Suggest reading material
-
-* Suggest a blog post. Or suggest a pill [an internal document that gives a condensed introduction to a topic].
-
-#### Solve the problem
+#### Solve their problem
 
 * If the student has a really tricky problem that will delay them for a long time, it's often better to just solve it for them so they can get going again.  Whilst keeping the process efficient, try and make it as [open](#open-process-vs-closed) as possible.  Try and explain how I know to try the things I'm trying.
 
