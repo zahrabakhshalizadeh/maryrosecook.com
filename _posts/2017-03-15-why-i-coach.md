@@ -9,7 +9,7 @@ hidden: true
 
 In this essay, I'll describe some of my favourite parts of coaching.  For each part, I'll explain how my work supports a learning goal at Makers.  And I'll explain how the environment at Makers supports this learning goal.
 
-Note: we refer to our students as "developers".
+Note: we refer to our students as developers.
 
 ### Giving as little help as possible
 
@@ -31,7 +31,7 @@ The environment helps developers improve their processes.  Pair programming, gro
 
 At Makers, we help developers aspire to become better programmers.
 
-I support this in a number of ways.  Two examples.  A developer asked me what programming language would help him explore functional programming further.  I took great pleasure in suggesting Clojure.  It's wonderful to be able to share the things I'm excited about.  If a developer asks me for help with a programming problem, I might show them a cool technique. Or, I might talk through the source of my intuition about where to look for the problem.  It feels great to share techniques from one craft practitioner to another.  Sometimes, a developer will ask how I started making [games](http://emptyblack.com), or how I got a job at [Ableton](https://www.ableton.com), or how I made a [programming language](http://codelauren.com).  It feels great to be able to give them advice.
+I support this in a number of ways.  Two examples.  A developer asked me what programming language would help him explore functional programming further.  I took great pleasure in suggesting Clojure.  It's wonderful to be able to share the things I'm excited about.  If a developer asks me for help with a programming problem, I might show them a cool technique. Or, I might talk through the source of my intuition about where to look for the problem.  It feels good to share techniques from one craft practitioner to another.  Sometimes, a developer will ask how I started making [games](http://emptyblack.com), or how I got a job at [Ableton](https://www.ableton.com), or how I made a [programming language](http://codelauren.com).  It feels great to be able to give them advice.
 
 The environment supports the aspiration to become a better programmer.  We recommend books and talks by expert programmers.  When pair programming, developers frequently work with people who are better than them.  This gives them someone to learn from and a standard to aspire to.  By encouraging varied projects (from a VR city-builder to an arithmetic interpreter written in Haskell), the environment becomes a community of developers who inspire each other.
 
