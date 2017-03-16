@@ -3,7 +3,6 @@ title: Why I coach
 author: maryrosecook
 layout: post
 permalink: /blog/post/why-i-coach
-hidden: true
 ---
 [Makers Academy](http://www.makersacademy.com) is a programming bootcamp.  I've coached there for the last nine months.  I love it.
 
