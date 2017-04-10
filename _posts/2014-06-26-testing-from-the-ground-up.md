@@ -471,7 +471,7 @@ Look at `runTests()`. It takes `userTests`, an array that contains the test func
 
 `testAsync()` creates a timeout that will fire in one second. It runs the test function, passing a `done()` callback for the test to run when it is complete. If the callback gets run, the timeout is cleared and `testDone()` is called to indicate that the next test can run. If the `done()` callback is never run by the test function, something went wrong. The timeout will fire and throw an exception, and the program will exit.
 
-If the `length` attribute of the test function has the value ``, the function is run with `testSync()`. This is the same as `testAsync()`, except there is no timeout and the `testDone()` callback is called as soon as the test function has completed.
+If the `length` attribute of the test function has the value `0`, the function is run with `testSync()`. This is the same as `testAsync()`, except there is no timeout and the `testDone()` callback is called as soon as the test function has completed.
 
 <pre class="prettyprint">var test = function() {
   runTests(gatherTests(arguments));
