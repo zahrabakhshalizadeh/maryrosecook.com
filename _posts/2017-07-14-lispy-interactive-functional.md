@@ -14,7 +14,7 @@ Functional programming boils down to writing code that has no side effects.  A f
 
 #### Writing code using Lisp syntax
 
-Lisp code has a very simple syntax: it's just lists.  A Lisp creates lists to do everything.
+Lisp code has a very simple syntax: it's just lists.  These lists do everything.  They call functions.  They act as conditionals.  They represent data.
 
 #### Programming interactively
 
@@ -24,33 +24,35 @@ Interactive programmers tend to create their programs like a sculptor works with
 
 Lisp expressions, called S-expressions, are lists.  Here's an S-expression to print to the console:
 
+``` clojure
 (println "Hello")
+```
 
 This is typical.  The parentheses indicate the start and end of the list.  The first element in the list is the name of the function to call.  The rest of the elements in the list are arguments to the function call.
 
-> How is this different from how you print to the console in JavaScript?
+> How is this different from how you print to the console in Ruby?
 
 ### Lisp syntax is homogenous
 
-The magic thing is that you now know *all* of Lisp's syntax.  Compare a conditional in JavaScript:
+The magic thing is that you now know *all* of Lisp's syntax.  Compare a conditional in Ruby:
 
-<pre class="prettyprint">
-if (true) {
-  console.log("Hello");
-} else {
-  console.log("Goodbye");
-}
-</pre>
+``` ruby
+if true
+  p "Hello"
+else
+  p "Goodbye"
+end
+```
 
 And Clojure:
 
-<pre class="prettyprint lang-clj">
+``` clojure
 (if true
   (println "Hello")
   (println "Goodbye"))
-</pre>
+```
 
-In JavaScript, there's a different syntax for creating condionals and calling functions.  In Clojure, a conditional is, essentially, just another function call.
+In Ruby, there's a different syntax for creating condionals and calling functions.  In Clojure, a conditional is, essentially, just another function call.
 
 ### Interactive programming
 
@@ -65,7 +67,9 @@ The process for interactive programming goes like this:
 3. Plan the code change that will get you a bit closer to the result you want.
 4. Make the code change.  Return to 1.
 
-#### Example part 1
+#### Using the process to define `say-hi`
+
+You can use [Repl.it](https://repl.it/languages/clojure) to write and run Clojure code.
 
 Click the Run button (step 1).
 
@@ -105,17 +109,17 @@ Use the four steps to add your `println` code to the `say-hi` definition.
 
 Let's take a step back.  There's something funny going on.  Earlier, you typed a function definition into the program and ran it.  Now, you can somehow run that function from the REPL.
 
-Draw a diagram that shows the following:
+> Draw a diagram that shows the following:
 
-* The functions defined in your program code.
-* The functions defined in the computer's memory.
-* The functions you can currently run from the REPL.
-* The actions you can take to change each of these things.  Actions include typing in code to your program, typing in code to the REPL, clicking the Run button, and pressing RETURN at the REPL.
+> * The functions defined in your program code.
+> * The functions defined in the computer's memory.
+> * The functions you can currently run from the REPL.
+> * The actions you can take to change each of these things.  Actions include typing in code to your program, typing in code to the REPL, clicking the Run button, and pressing RETURN at the REPL.
 
-To help you, you could:
+> To help you, you could:
 
-* Define some more functions in your program.  (Make sure they have different names and print different things so you can distinguish between them.)
-* Define some functions from the REPL.
+> * Define some more functions in your program.  (Make sure they have different names and print different things so you can distinguish between them.)
+> * Define some functions from the REPL.
 
 #### Interactive programming vs TDD
 
@@ -137,13 +141,13 @@ There are two interesting properties of this style:
 * Behaviour and state are separated.
 * Code has no side effects.
 
-#### Functions that take some arguments and return some data.
+#### Functions that take some arguments and return some data
 
 Let's say you're writing an app to help you remember todos.  Things like "Get milk" and "Walk the dog".
 
 In Ruby, you might write:
 
-```
+``` ruby
 class Todos
   def initialize
     @todos = []
@@ -158,7 +162,9 @@ todos = Todos.new
 todos.add("Get milk")
 ```
 
-This code is in an OO style, not a functional style.  `initialize` and `add` have effects besides their return values.  The return values of these functions are completely unimportant to the behaviour of the program.  This shows that the code is very much in the OO style and very much not in the functional style.
+(You can use [Repl.it](https://repl.it/languages/ruby) to write and run Ruby code.)
+
+This code is in an object-oriented style, not a functional style.  `initialize` and `add` have effects besides their return values.  The return values of these functions are completely unimportant to the behaviour of the program.  This shows that the code is very much in the object-oriented style and very much not in the functional style.
 
 > Reimplement this code in Ruby in a functional style.  Don't create a class.  Just write functions that do their work by taking arguments and returning data. <sup>[1](#1)</sup>
 
@@ -166,7 +172,9 @@ Click the footnote link to see a possible implementation.
 
 #### Behaviour and state are separated
 
-> Look at the code above that I wrote in an OO style.
+Programmers sometimes divide their code into two categories: state and behaviour.  State is the data the code operates on.  Behaviour is the code that does stuff.  Roughly speaking, state is variables and behaviour is functions.
+
+> Look at the code above that I wrote in an object-oriented style.
 
 > What is the state in that code? <sup>[2](#2)</sup>
 
@@ -182,7 +190,7 @@ Notice that the code written in a functional style has combined the state and be
 
 Here's the same code written in Clojure's functional style:
 
-```
+``` clojure
 (let [todos (vector)]
   (conj todos "Get milk"))
 ```
@@ -209,7 +217,7 @@ Notice that the state and behaviour are kept separate.  `conj` is just a functio
 
 Have a look at this code:
 
-```
+``` ruby
 def create_todos
   []
 end
@@ -241,7 +249,7 @@ It's much easier to write code in a functional style in Clojure than it is in Ru
 
 <sup><a name="1">1</a></sup> Ruby implementation of creating and adding todos
 
-```
+``` clojure
 def create_todos
   []
 end
@@ -252,6 +260,7 @@ end
 
 todos = add_todo(create_todos, "Get milk")
 ```
+
 <sup><a name="2">2</a></sup> The state is the `@todos` array.
 
 <sup><a name="3">3</a></sup> The behaviour is the ability to initialize a `Todos` object.  And it's the ability to add a todo.
@@ -266,13 +275,21 @@ todos = add_todo(create_todos, "Get milk")
 
 <sup><a name="8">8</a></sup> Encapsulation doesn't really exist in functional code.  "Private data" and "implementation details" aren't a focal point.  Why might that be?
 
-<sup><a name="9">9</a></sup> Combining state and behaviour has a disadvantage.  You have some greate behaviour, but you can only use it on one piece of state - the state it's combined with.  In contrast, we can use Clojure's conj function on any array.  It doesn't matter if it's an array of todos or an array of numbers.  It was written once and we get to use it with many different pieces of data.
+<sup><a name="9">9</a></sup> Combining state and behaviour has a disadvantage.  Imagine that you have some great behaviour, but you can only use it on one piece of state - the state it's combined with.  In contrast, we can use Clojure's conj function on any array in any domain: todos, photos, climbing.
 
-<sup><a name="10">10</a></sup> The programmer wanted to use `generic_todos` as a starting point for both `work_todos` and `home_todos`.  Unfortunately, they ended up creating only one array.  They repeatedly added todos to this array until it contained `["Create todo list", "Deliver workshop", "Make supper"]`.
+<sup><a name="10">10</a></sup> The programmer wanted to use `generic_todos` as a starting point for both `work_todos` and `home_todos`.  Unfortunately, they ended up creating an array and then repeatedly adding items to that same array.  It ended up looking like this: `["Create todo list", "Deliver workshop", "Make supper"]`.
 
-<sup><a name="12">12</a></sup> Proving that Clojure's vector data structure is immutable.
+<sup><a name="11">11</a></sup> `add_todo` in a functional style:
 
+``` ruby
+def add_todo(todos, text)
+  todos + [text]
+end
 ```
+
+<sup><a name="12">12</a></sup> Proving that Clojure's vector data structure is immutable:
+
+``` clojure
 (let [todos (vector)]
   (println (conj todos "Get milk"))
   (println todos))
