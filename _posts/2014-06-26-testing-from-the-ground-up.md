@@ -28,17 +28,18 @@ To see the code from this essay in runnable form, go to the [Testing From The Gr
 
 This is the HTML that defines the only page in the web app. It has a canvas element that displays the sky. It loads the client side JavaScript, `client.js`. When the DOM is ready, it calls `loadTime()`, the one and only function.
 
-<pre class="prettyprint">&lt;!doctype html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;script src="client.js"&gt;&lt;/script&gt;
-  &lt;/head&gt;
+```html
+<!doctype html>
+<html>
+  <head>
+    <script src="client.js"></script>
+  </head>
 
-  &lt;body onload="loadTime();"&gt;
-    &lt;canvas id="canvas" width="600" height="100"&gt;&lt;/canvas&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</pre>
+  <body onload="loadTime();">
+    <canvas id="canvas" width="600" height="100"></canvas>
+  </body>
+</html>
+```
 
 Below is the client side JavaScript.
 
@@ -46,7 +47,8 @@ Below is the client side JavaScript.
 
 The bound function grabs the drawing context for the canvas element. It parses `"day"` or `"night"` from the JSON returned by the server. If the value is `"day"`, it sets the draw color to blue and draws a rectangle that takes up the whole canvas. If the value is `"night"`, the color is black.
 
-<pre class="prettyprint">;(function(exports) {
+```javascript
+;(function(exports) {
   exports.loadTime = function() {
     var request = new XMLHttpRequest();
     request.onload = function(data) {
@@ -62,13 +64,14 @@ The bound function grabs the drawing context for the canvas element. It parses `
     request.send();
   };
 })(this);
-</pre>
+```
 
 Below is the server-side JavaScript. It is run in [Node.js][2]. Near the bottom, the code uses the Node HTTP module to create a web server. It specfies that every web request should be handled by `requestHandler()`. Each time this function is called, Node passes it a `request` object that has the URL that was requested, and a `response` object that can be used to send data back to the client.
 
 If the client requested `"/"`, the root, the `index.html` file is read from disk and its contents are sent back to be displayed in the user's browser. If `"/time.json"` was requested, the server looks up the time, creates a piece of JSON that looks something like `{ "time": "day" }` and sends it back to the user's web browser.
 
-<pre class="prettyprint">var http = require("http");
+```javascript
+var http = require("http");
 var fs = require("fs");
 
 var requestHandler = function (request, response) {
@@ -86,7 +89,7 @@ var requestHandler = function (request, response) {
     response.writeHead(200, { "Content-Type": "application/json" });
 
     var hour = new Date().getHours();
-    var time = hour > 6 &#038;&#038; hour &lt; 20 ? "day" : "night";
+    var time = hour > 6 && hour < 20 ? "day" : "night";
 
     response.end('{ "time": "' + time + '" }');
   }
@@ -95,7 +98,7 @@ var requestHandler = function (request, response) {
 http.createServer(requestHandler).listen(4000);
 
 exports.requestHandler = requestHandler;
-</pre>
+```
 
 Here is the [code][3] for the basic web app.
 
@@ -103,7 +106,8 @@ Here is the [code][3] for the basic web app.
 
 It is possible to write tests that each include the generic code for reporting their outcome, for reporting errors, for calling the next test. But, that means a lot of repetition. It's easier to use a testing framework. This is the one I wrote.
 
-<pre class="prettyprint">var test = function() {
+```javascript
+var test = function() {
   gatherTests(arguments).forEach(function(userTest) {
     userTest();
     process.stdout.write(".");
@@ -125,22 +129,24 @@ var gatherTests = function(testArgs) {
 };
 
 module.exports = test;
-</pre>
+```
 
 `test()` could be used to write a test like this:
 
-<pre class="prettyprint">var test = require("./test");
+```javascript
+var test = require("./test");
 test(
   "should test 1 equals 1", function() {
     test.isEqual(1, 1);
   });
-</pre>
+```
 
 Which, when run, would look like this:
 
-<pre class="prettyprint">$ node test.js
+```javascript
+$ node test.js
   .
-</pre>
+```
 
 How does the testing framework run the tests it is given?
 
@@ -154,7 +160,8 @@ I don't want to have to run the server when I run the tests. That would be an ex
 
 This is the code I wrote that pretends to be the server deciding what time it is and the internet relaying that information back to the client. It does this by faking an Ajax request. It replaces the `XMLHttpRequest` constructor function with a function that returns a home-made Ajax request object. This object swallows the web app's call to `open()`. When the web app calls `send()`, it calls the function that the web app has bound to `onload`. It passes some fake JSON that makes it seem like it is always day time.
 
-<pre class="prettyprint">global.XMLHttpRequest = function() {
+```javascript
+global.XMLHttpRequest = function() {
   this.open = function() {};
 
   this.send = function() {
@@ -163,7 +170,7 @@ This is the code I wrote that pretends to be the server deciding what time it is
     });
   };
 };
-</pre>
+```
 
 #### Mocking the canvas and the DOM
 
@@ -171,7 +178,8 @@ When the real code runs in a real web browser, it renders the sky to the real ca
 
 Instead of walking down that horrid road, I wrote some code that pretends to be the browser DOM and the canvas element. It redefines `getElementById()` to return a fake canvas. This has a fake `getContext()` that returns a fake drawing context that has a fake `fillRect()` and a fake reference to a fake canvas that has a `width` and `height`. Instead of drawing, this function checks that the arguments passed to it have the expected values.
 
-<pre class="prettyprint">global.document = {
+```javascript
+global.document = {
   getElementById: function() {
     return {
       getContext: function() {
@@ -189,11 +197,12 @@ Instead of walking down that horrid road, I wrote some code that pretends to be 
     };
   }
 };
-</pre>
+```
 
 This is the full test.
 
-<pre class="prettyprint">var test = require("./test");
+```javascript
+var test = require("./test");
 var client = require("../client");
 
 test(
@@ -229,7 +238,7 @@ test(
 
     client.loadTime();
   });
-</pre>
+```
 
 Don't worry. That code is as bad as this essay gets.
 
@@ -241,7 +250,8 @@ Those mocks are pretty horrid. They make the test very long, which discourages m
 
 To solve this problem, I refactored the code by pulling the drawing code out into its own module, `renderer`. This module includes `fillBackground()`, a function that fills the canvas with the passed color. As a side benefit, the main web app code is now easier to understand and change.
 
-<pre class="prettyprint">;(function(exports) {
+```javascript
+;(function(exports) {
   exports.loadTime = function() {
     var request = new XMLHttpRequest();
     request.onload = function(data) {
@@ -266,11 +276,12 @@ To solve this problem, I refactored the code by pulling the drawing code out int
     }
   };
 })(this);
-</pre>
+```
 
 This lets me replace the complex `document` mock with a short `renderer.ctx()` mock. The test becomes shorter, simpler and less brittle.
 
-<pre class="prettyprint">var test = require("./test");
+```javascript
+var test = require("./test");
 var client = require("../client");
 
 test(
@@ -300,7 +311,7 @@ test(
 
     client.loadTime();
   });
-</pre>
+```
 
 Here is the [code][5] for the modularised renderer and resulting simplified client side test.
 
@@ -308,43 +319,48 @@ I modularised the client side code further by splitting out three more functions
 
 This is `get()`. It makes an Ajax request to the passed URL. The Ajax request object calls the passed callback with the response.
 
-<pre class="prettyprint">var get = exports.get = function(url, callback) {
+```javascript
+var get = exports.get = function(url, callback) {
   var request = new XMLHttpRequest();
   request.onload = callback;
   request.open("GET", url, true);
   request.send();
 };
-</pre>
+```
 
 This is `getTime()`. It uses `get()` to make an Ajax request to `"/time.json"` and parses `"day"` or `"night"` from the response.
 
-<pre class="prettyprint">exports.getTime = function(callback) {
+```javascript
+exports.getTime = function(callback) {
   exports.get("/time.json", function(data) {
     callback(JSON.parse(data.target.responseText).time);
   });
 };
-</pre>
+```
 
 This is `displayTime()`. It takes a string with the value `"day"` or `"night"` and draws either a blue sky or a black sky.
 
-<pre class="prettyprint">exports.displayTime = function(time) {
+```javascript
+exports.displayTime = function(time) {
   var color = time === "day" ? "blue" : "black";
   renderer.fillBackground(color);
 };
-</pre>
+```
 
 I changed the `body` tag in the HTML page. It now calls `getTime()`, passing `displayTime()` as the callback.
 
-<pre class="prettyprint">&lt;body onload="getTime(displayTime);"&gt;
-  &lt;canvas id="canvas" width="600" height="100"&gt;&lt;/canvas&gt;
-&lt;/body&gt;
-</pre>
+```html
+<body onload="getTime(displayTime);">
+  <canvas id="canvas" width="600" height="100"></canvas>
+</body>
+```
 
 Having more modular code means that I can mock parts of the web app API, rather than mocking code written by third parties. This makes it easier to write tests that test a specific piece of functionality.
 
 Using this refactor, I could write tests that are more extensive. The first test checks that `getTime()` correctly parses JSON sent by the server. The second test checks that a call to `fillBackground()` draws a rectangle at the correct position and size. The third test checks that `displayTime()` draws a rectangle of the correct color for the time of day.
 
-<pre class="prettyprint">var test = require("./test");
+```javascript
+var test = require("./test");
 var client = require("../client");
 
 test(
@@ -379,7 +395,7 @@ test(
 
     client.displayTime("day");
   });
-</pre>
+```
 
 Here is the [code][6] for the more modular client code and more extensive tests.
 
@@ -391,14 +407,15 @@ Some of the responsibilities of a web server require asynchronous operations. If
 
 These are the tests I wrote to check that both cases are handled correctly.
 
-<pre class="prettyprint">var test = require("./test");
+```javascript
+var test = require("./test");
 var requestHandler = require("../server").requestHandler;
 var http = require("http");
 
 test(
   "should send index.html when / requested", function() {
     http.ServerResponse.prototype.end = function(data) {
-      test.isEqual(data.toString().substr(0, 9), "&lt;!doctype");
+      test.isEqual(data.toString().substr(0, 9), "<!doctype");
     };
 
     requestHandler({ url: "/" }, new http.ServerResponse({}));
@@ -411,22 +428,23 @@ test(
 
     requestHandler({ url: "/client.js" }, new http.ServerResponse({}));
   });
-</pre>
+```
 
 The output when I run these tests:
 
-<pre class="prettyprint">$ node server_tests.js
+```javascript
+$ node server_tests.js
   ..
 
   test.js:12
     throw a + " and " + b + " are not equal";
                           ^
-  &lt;!doctype  and ;(function are not equal
-</pre>
+  <!doctype  and ;(function are not equal
+```
 
 An exception is thrown, yet there are two periods indicating two passed tests. Something is wrong.
 
-In the first test, `response.end()` is mocked with a function that checks that   
+In the first test, `response.end()` is mocked with a function that checks that
 `"<!doctype"` is sent to the user. Next, `requestHandler()` is called, requesting the URL `"/"`. `requestHandler()` starts reading `index.html` from disk. While the file is being read, the test framework presses on with its work. Uh oh. That is, the framework prints a period and starts the second test, though the `response.end()` mock has not asserted the value of the response. `response.end()` is re-mocked with a function that checks that `";(function"` is sent to the user. Double uh oh. `requestHandler()` is called by the second test. It requests the URL `"/client.js"`. `requestHandler()` starts reading `client.js` from disk. The framework prints another premature period.
 
 At some point later, `index.html` is read from disk. This means that the callback in `requestHandler()` is called and it calls `response.end()` with the contents of `index.html`. Unfortunately, by this time, `response.end()` has been mocked with a function expecting `";(function"`. The assertion fails.
@@ -439,14 +457,15 @@ This may seem pedantic. Shouldn't tests that are testing asynchronous behaviour 
 
 I rewrote the testing framework to run asynchronous tests serially. Each asynchronous test binds a `done()` callback parameter. It calls this when it has made all its assertions. The testing framework uses the execution of this callback as a signal to run the next test. Here are the rewritten tests.
 
-<pre class="prettyprint">var test = require("./test");
+```javascript
+var test = require("./test");
 var requestHandler = require("../server").requestHandler;
 var http = require("http");
 
 test(
   "should send index.html when / requested", function(done) {
     http.ServerResponse.prototype.end = function(data) {
-      test.isEqual(data.toString().substr(0, 9), "&lt;!doctype");
+      test.isEqual(data.toString().substr(0, 9), "<!doctype");
       done();
     };
 
@@ -461,7 +480,7 @@ test(
 
     requestHandler({ url: "/client.js" }, new http.ServerResponse({}));
   });
-</pre>
+```
 
 #### A miniscule asynchronous testing framework
 
@@ -473,7 +492,8 @@ Look at `runTests()`. It takes `userTests`, an array that contains the test func
 
 If the `length` attribute of the test function has the value `0`, the function is run with `testSync()`. This is the same as `testAsync()`, except there is no timeout and the `testDone()` callback is called as soon as the test function has completed.
 
-<pre class="prettyprint">var test = function() {
+```javascript
+var test = function() {
   runTests(gatherTests(arguments));
 };
 
@@ -524,7 +544,7 @@ var gatherTests = function(testArgs) {
 };
 
 module.exports = test;
-</pre>
+```
 
 Here is the [code][7] for the asynchronous testing framework and the new server tests.
 

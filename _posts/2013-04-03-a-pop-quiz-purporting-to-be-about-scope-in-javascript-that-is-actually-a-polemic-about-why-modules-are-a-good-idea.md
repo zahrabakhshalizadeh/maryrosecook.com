@@ -12,13 +12,14 @@ I will ask you some questions. For each question, there will be some JavaScript 
 
 For this first question, there is one JavaScript file, `a.js`, loaded into this HTML page:
 
-<pre class="prettyprint">&lt;!doctype html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;script src="a.js"&gt;&lt;/script&gt;
-  &lt;/head&gt;
-&lt;/html&gt;
-</pre>
+``` html
+<!doctype html>
+<html>
+  <head>
+    <script src="a.js"></script>
+  </head>
+</html>
+```
 
 ### One
 
@@ -32,42 +33,46 @@ console.log(blah); // Option 1: ReferenceError: blah is not defined
 
 For this rest of the questions, there will be two JavaScript files, `a.js` and `b.js`, loaded into this HTML page:
 
-<pre class="prettyprint">&lt;!doctype html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;script src="a.js"&gt;&lt;/script&gt;
-    &lt;script src="b.js"&gt;&lt;/script&gt;
-  &lt;/head&gt;
-&lt;/html&gt;
-</pre>
+``` html
+<!doctype html>
+<html>
+  <head>
+    <script src="a.js"></script>
+    <script src="b.js"></script>
+  </head>
+</html>
+```
 
 ### Two
 
-<pre class="prettyprint">// a.js
+``` javascript
+// a.js
 blah = "blah";
 
 // b.js
 console.log(blah); // Option 1: ReferenceError: blah is not defined
                    // Option 2: print 'blah' to the console
-</pre>
+```
 
 `blah` will be printed. It doesn't matter that `blah` was declared in a different file. All files in JavaScript are loaded into a shared scope.
 
 ### Three
 
-<pre class="prettyprint">// a.js
+``` javascript
+// a.js
 var blah = "blah";
 
 // b.js
 console.log(blah); // Option 1: ReferenceError: blah is not defined
                    // Option 2: print 'blah' to the console
-</pre>
+```
 
 `blah` will be printed. It doesn't matter that the `var` keyword was used to declare `blah`. The declaration was in a shared scope, and that scope is global, so `blah` becomes a global variable.
 
 ### Four
 
-<pre class="prettyprint">// a.js
+``` javascript
+// a.js
 var blahFn = function() {
   return "blah";
 };
@@ -75,13 +80,14 @@ var blahFn = function() {
 // b.js
 console.log(blahFn()); // Option 1: ReferenceError: blah is not defined
                        // Option 2: print 'blah' to the console
-</pre>
+```
 
 `blah` will be printed. All the logic shown so far applies to functions.
 
 ### Five
 
-<pre class="prettyprint">// a.js
+``` javascript
+// a.js
 function blahFn() {
   var blah = "blah";
 };
@@ -90,13 +96,14 @@ function blahFn() {
 blahFn();
 console.log(blah); // Option 1: ReferenceError: blah is not defined
                    // Option 2: print 'blah' to the console
-</pre>
+```
 
 There will be a reference error. The `blah` variable is created inside a function, in the function's own, private scope. It is not available in the global scope.
 
 ### Six
 
-<pre class="prettyprint">// a.js
+``` javascript
+// a.js
 function blahFn() {
   blah = "blah";
 };
@@ -105,13 +112,14 @@ function blahFn() {
 blahFn();
 console.log(blah); // Option 1: ReferenceError: blah is not defined
                    // Option 2: print 'blah' to the console
-</pre>
+```
 
 `blah` will be printed. With the var keyword omitted, the `blah` variable goes into the global scope.
 
 ### Seven
 
-<pre class="prettyprint">// a.js
+``` javascript
+// a.js
 ;(function() {
   function blahFn() {
     return "blah";
@@ -120,20 +128,22 @@ console.log(blah); // Option 1: ReferenceError: blah is not defined
   console.log(blahFn()); // Option 1: ReferenceError: blahFn is not defined
                          // Option 2: print 'blah' to the console
 })();
-</pre>
+```
 
 `a.js` is loaded. The anonymous function at the top is invoked, creating our first JavaScript module. The module instantiates `blahFn`. The `console.log()` invocation prints `blah` because the code inside a module has a shared scope.
 
-<pre class="prettyprint">// b.js
+``` javascript
+// b.js
 console.log(blahFn()); // Option 1: ReferenceError: blahFn is not defined
                        // Option 2: print 'blah' to the console
-</pre>
+```
 
 When `console.log()` is invoked in `b.js`, a ReferenceError is thrown. The variables inside the module in `a.js` are locked away. The global scope is not polluted.
 
 ### Eight
 
-<pre class="prettyprint">// a.js
+``` javascript
+// a.js
 ;(function(exports) {
   var Blah = {};
 
@@ -147,7 +157,7 @@ When `console.log()` is invoked in `b.js`, a ReferenceError is thrown. The varia
 // b.js
 console.log(Blah.blahFn()); // Option 1: ReferenceError: Blah is not defined
                             // Option 2: print 'blah' to the console
-</pre>
+```
 
 When the `console.log()` is invoked, `blah` is printed. The module has made itself available as an object in the global scope. It has also made available one of its variables on this object.
 
@@ -155,7 +165,8 @@ To do this, it made an empty object, `Blah`, and attached `blahFn` to it as an a
 
 ### Nine
 
-<pre class="prettyprint">// a.js
+``` javascript
+// a.js
 (function woo() {
   return function() {
     console.log("woo")
@@ -166,7 +177,7 @@ To do this, it made an empty object, `Blah`, and attached `blahFn` to it as an a
 (function() {
   console.log("boo")
 })();
-</pre>
+```
 
 What is printed? `woo` or `boo`?
 

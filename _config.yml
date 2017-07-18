@@ -14,6 +14,9 @@ github_username:  maryrosecook
 
 # Build settings
 gems: [jekyll-paginate]
-markdown: redcarpet
-redcarpet:
-  extensions: [smart, footnotes, with_toc_data]
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
