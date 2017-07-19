@@ -30,8 +30,6 @@ Lisp expressions, called S-expressions, are lists.  Here's an S-expression to pr
 
 This is typical.  The parentheses indicate the start and end of the list.  The first element in the list is the name of the function to call.  The rest of the elements in the list are arguments to the function call.
 
-> How is this different from how you print to the console in Ruby?
-
 ### Lisp syntax is homogenous
 
 The magic thing is that you now know *all* of Lisp's syntax.  Compare a conditional in Ruby:
@@ -109,24 +107,28 @@ Use the four steps to add your `println` code to the `say-hi` definition.
 
 Let's take a step back.  There's something funny going on.  Earlier, you typed a function definition into the program and ran it.  Now, you can somehow run that function from the REPL.
 
-> Draw a diagram that shows the following:
+> Consider the following two things:
 
 > * The functions defined in your program code.
 > * The functions defined in the computer's memory.
-> * The functions you can currently run from the REPL.
-> * The actions you can take to change each of these things.  Actions include typing in code to your program, typing in code to the REPL, clicking the Run button, and pressing RETURN at the REPL.
 
-> To help you, you could:
+> In words or diagrams, describe how the two things above are used or change when you do each of the following things:
+
+> * You press the Run button. <sup>[1](#1)</sup>
+> * You type a function definition into the main program and don't press Run. <sup>[2](#2)</sup>
+> * You type a function invocation into the main program and press Run. <sup>[3](#3)</sup>
+> * You type a function definition into the REPL and press the return key. <sup>[4](#4)</sup>
+> * You type a function invocation into the REPL and press the return key. <sup>[5](#5)</sup>
+
+> To further your understanding, you could:
 
 > * Define some more functions in your program.  (Make sure they have different names and print different things so you can distinguish between them.)
 > * Define some functions from the REPL.
 
 #### Interactive programming vs TDD
 
-> Can interactive programming replace TDD?
-> What *drives* TDD and what drives interactive programming?
-> Why do we write code using TDD?
-> Do tests have a place in interactive programming?
+> Can interactive programming replace TDD? <sup>[6](#6)</sup>
+> Do tests have a place in interactive programming? <sup>[7](#7)</sup>
 
 ### Functional programming
 
@@ -247,7 +249,21 @@ It's much easier to write code in a functional style in Clojure than it is in Ru
 
 #### Footnotes
 
-<sup><a name="1">1</a></sup> Ruby implementation of creating and adding todos
+<sup><a name="1">1</a></sup> Any function definitions in the main program are put into the computer's memory.  What happens if one of the functions is already defined with a different implementation?
+
+<sup><a name="2">2</a></sup> The functions defined in the computer's memory don't change.
+
+<sup><a name="3">3</a></sup> That function is looked up in the computer's memory and run.
+
+<sup><a name="4">4</a></sup> That function definition is put into the computer's memory.
+
+<sup><a name="5">5</a></sup> That function is looked up in the computer's memory and run.
+
+<sup><a name="6">6</a></sup> Partly.  Like TDD, it allows you to have a tight feedback loop for making your code behave as you want it to.  Like TDD, it allows you to design your code and interfaces in an exloratory way.  But, unlike TDD, it doesn't give you a way to carry out risksfree refactors
+
+<sup><a name="7">7</a></sup> Yes, as a way to assure future code correctness.
+
+<sup><a name="8">8</a></sup> Ruby implementation of creating and adding todos
 
 ``` clojure
 def create_todos
@@ -261,25 +277,25 @@ end
 todos = add_todo(create_todos, "Get milk")
 ```
 
-<sup><a name="2">2</a></sup> The state is the `@todos` array.
+<sup><a name="9">9</a></sup> The state is the `@todos` array.
 
-<sup><a name="3">3</a></sup> The behaviour is the ability to initialize a `Todos` object.  And it's the ability to add a todo.
+<sup><a name="10">10</a></sup> The behaviour is the ability to initialize a `Todos` object.  And it's the ability to add a todo.
 
-<sup><a name="4">4</a></sup> The state is the array of todos.
+<sup><a name="11">11</a></sup> The state is the array of todos.
 
-<sup><a name="5">5</a></sup> The behaviour is the `create_todos` and `add_todo` functions.
+<sup><a name="12">12</a></sup> The behaviour is the `create_todos` and `add_todo` functions.
 
-<sup><a name="6">6</a></sup> The state is the `todos` vector.
+<sup><a name="13">13</a></sup> The state is the `todos` vector.
 
-<sup><a name="7">7</a></sup> The behaviour is the `vector` and `conj` functions.
+<sup><a name="14">14</a></sup> The behaviour is the `vector` and `conj` functions.
 
-<sup><a name="8">8</a></sup> Encapsulation doesn't really exist in functional code.  "Private data" and "implementation details" aren't a focal point.  Why might that be?
+<sup><a name="15">15</a></sup> Encapsulation doesn't really exist in functional code.  "Private data" and "implementation details" aren't a focal point.  Why might that be?
 
-<sup><a name="9">9</a></sup> Combining state and behaviour has a disadvantage.  Imagine that you have some great behaviour, but you can only use it on one piece of state - the state it's combined with.  In contrast, we can use Clojure's conj function on any array in any domain: todos, photos, climbing.
+<sup><a name="16">16</a></sup> Combining state and behaviour has a disadvantage.  Imagine that you have some great behaviour, but you can only use it on one piece of state - the state it's combined with.  In contrast, we can use Clojure's conj function on any array in any domain: todos, photos, climbing.
 
-<sup><a name="10">10</a></sup> The programmer wanted to use `generic_todos` as a starting point for both `work_todos` and `home_todos`.  Unfortunately, they ended up creating an array and then repeatedly adding items to that same array.  It ended up looking like this: `["Create todo list", "Deliver workshop", "Make supper"]`.
+<sup><a name="17">17</a></sup> The programmer wanted to use `generic_todos` as a starting point for both `work_todos` and `home_todos`.  Unfortunately, they ended up creating an array and then repeatedly adding items to that same array.  It ended up looking like this: `["Create todo list", "Deliver workshop", "Make supper"]`.
 
-<sup><a name="11">11</a></sup> `add_todo` in a functional style:
+<sup><a name="18">18</a></sup> `add_todo` in a functional style:
 
 ``` ruby
 def add_todo(todos, text)
@@ -287,7 +303,7 @@ def add_todo(todos, text)
 end
 ```
 
-<sup><a name="12">12</a></sup> Proving that Clojure's vector data structure is immutable:
+<sup><a name="19">19</a></sup> Proving that Clojure's vector data structure is immutable:
 
 ``` clojure
 (let [todos (vector)]
