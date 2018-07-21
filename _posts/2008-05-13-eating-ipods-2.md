@@ -16,7 +16,7 @@ Steve Jobs sired the iPod by the force of his refined taste. The masses loved it
 
 Most pop music only has the former quality - we all like to dance, and to replay a melody in our heads. But Radiohead (1) take those nice melodies and spit them out in newish ways. Thus, they win the approval of everyone, including the critics. So, to a lesser extent, do Sonic Youth.
 
-A few times a day, I visit a website called Hacker News. It's quite like reddit: people post news items, vote and comment on them, and the most popular items get the most exposure. The difference with Hacker News is that all the news items are ostensibly focused on hacking (ingenious problem-solving). Even in the three months since I joined, I've noticed a drop in the overall quality of the news items. But how does this drop in quality manifest itself?
+A few times a day, I visit a website called Hacker News. It's quite like reddit: people post news items, vote and comment on them, and the most popular items get the most exposure. The difference with Hacker News is that all the news items are ostensibly focused on programming. Even in the three months since I joined, I've noticed a drop in the overall quality of the news items. But how does this drop in quality manifest itself?
 
 It is often said of universally revered pieces of art that they have been "done very well". When people say this, their admiration is a proxy for aesthetic pleasure within a well-understood set of rules. Jane Austen (2) took the romance novel, a traditionally trashy form, and wrote books that conformed to the established rules, but achieved great artistic heights. Converge released Jane Doe, a record that toes the metalcore line with its beatdowns and screaming and blast beats and heavy, distorted riffs. But they show such technical excellence and the music sounds so bleak that the record exceeds everything else in the genre.
 
@@ -28,7 +28,7 @@ This explains what has happened to reddit and Digg, and what is happening to Hac
 
 The iPod has a dictator with impeccable taste and everyone can find a use for it. The same is true of Radiohead. Converge fail because of the second condition of universal popularity. reddit, the first.
 
-(1) I don't actually like Radiohead, but I am an outlier.  
+(1) I don't actually like Radiohead, but I am an outlier.
 (2) See Paul Graham's article, [Some Heroes][1], for more on good writers who chose populist genres.
 
  [1]: http://www.paulgraham.com/heroes.html

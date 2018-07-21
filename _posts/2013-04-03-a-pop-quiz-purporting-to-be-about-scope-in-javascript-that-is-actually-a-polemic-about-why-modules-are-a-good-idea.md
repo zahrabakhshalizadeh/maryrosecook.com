@@ -6,7 +6,7 @@ permalink: /blog/post/a-pop-quiz-purporting-to-be-about-scope-in-javascript-that
 categories:
   - Uncategorized
 ---
-This is the blog post version of a lightning talk I gave at [Hacker School][1] last week.
+This is the blog post version of a lightning talk I gave at [the Recurse Center][1] last week.
 
 I will ask you some questions. For each question, there will be some JavaScript files loaded into an HTML page. In these JavaScript files, there will be some `console.log()` invocations. Your job is to predict what happens after each invocation.
 
@@ -189,4 +189,4 @@ Often, a module is put in its own JavaScript file. Often, JavaScript files that 
 
 Modules protect themselves from these sorts of nightmares with a leading semicolon.
 
- [1]: http://hackerschool.com
+ [1]: http://recurse.com

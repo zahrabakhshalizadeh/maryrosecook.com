@@ -5,7 +5,7 @@ layout: post
 permalink: /blog/post/ive-left-the-recurse-center
 ---
 
-After three joyous years, I've left the [Recurse Center](https://www.recurse.com/) (FKA Hacker School).  I've moved to London to be closer to my family.
+After three joyous years, I've left the [Recurse Center](https://www.recurse.com/).  I've moved to London to be closer to my family.
 
 RC is like a writer's retreat for programmers.  Recursers come for three months to get significantly better at programming.  The environment is mostly unstructured: there are no classes, curricula, grades or teachers.  Instead, Recursers get better at programming by working on projects they choose.
 

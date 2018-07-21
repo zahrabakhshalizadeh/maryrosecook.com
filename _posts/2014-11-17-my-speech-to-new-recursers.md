@@ -2,7 +2,7 @@
 title: My speech to new Recursers
 author: maryrosecook
 layout: post
-permalink: /blog/post/my-speech-to-new-hacker-schoolers
+permalink: /blog/post/my-speech-to-new-recursers
 categories:
   - Uncategorized
 ---

@@ -6,7 +6,7 @@ permalink: /blog/post/pistol-slut-third-demo
 categories:
   - Uncategorized
 ---
-It's starting to turn into a game. Last night, as I played through the level, I felt a first jolt of fun. I've made the frame much wider to allow the pitched battles that I think are going to be the core of the game. I've added mortars, floating Chinese lanterns and four planes of parallax scrolling. I added and then removed cycling of the colour of the sky from dark to light to dark. The police don't accidentally shoot each other any more, and they throw grenades.
+It's starting to turn into a game. Last night, as I played through the level, I felt a first jolt of fun. I've made the frame much wider to allow the pitched battles that I think are going to be the core of the game. I've added mortars, floating Chinese lanterns and four planes of parallax scrolling. I added and then removed cycling of the colour of the sky from dark to light to dark. The enemies don't accidentally shoot each other any more, and they throw grenades.
 
 It is so fun to work on a game. It's a completely different type of programming from making a website. There are far more interactions between different elements. It is a machine with parts working in concert, whereas a website is a landscape with disparate lanes leading away from each other. [Tom Klein Peter][1] said [this][2] of building Audiogalaxy:
 

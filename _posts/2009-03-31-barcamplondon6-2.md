@@ -20,7 +20,7 @@ Gui's thesis ([slides][1]) is that one can try out recipes and then improve them
 
 <img src="/images/IMG_0147.JPG" alt="" width="600" />
 
-I went to a talk on young people by a guy called Will. We talked mostly about the divide between younger and older people and about whether the two groups differ. Did you know that people under sixteen can, after 9pm, be escorted by Police out of central London?
+I went to a talk on young people by a guy called Will. We talked mostly about the divide between younger and older people and about whether the two groups differ.
 
 <img src="/images/IMG_0152.JPG" alt="" width="600" />
 

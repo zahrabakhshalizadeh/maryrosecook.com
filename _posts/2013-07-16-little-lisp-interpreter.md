@@ -6,7 +6,7 @@ permalink: /blog/post/little-lisp-interpreter
 categories:
   - Uncategorized
 ---
-[Little Lisp][1] is an interpreter that supports function invocation, lambdas, lets, ifs, numbers, strings, a few library functions, and lists. I wrote it for a lightning talk at [Hacker School][2] to show how easy it is to write an interpreter. The [code][1] is 116 lines of JavaScript. I will explain how it works.
+[Little Lisp][1] is an interpreter that supports function invocation, lambdas, lets, ifs, numbers, strings, a few library functions, and lists. I wrote it for a lightning talk at [the Recurse Center][2] to show how easy it is to write an interpreter. The [code][1] is 116 lines of JavaScript. I will explain how it works.
 
 First, let's learn some Lisp.
 
@@ -379,5 +379,5 @@ var interpret = function(input, context) {
 Go to the [GitHub repository][1] to see all the code. And look at [lis.py][3], the dazzlingly simple Scheme interpreter that Peter Norvig wrote in Python.
 
  [1]: https://github.com/maryrosecook/littlelisp
- [2]: https://www.hackerschool.com
+ [2]: https://recurse.com
  [3]: http://norvig.com/lispy.html
