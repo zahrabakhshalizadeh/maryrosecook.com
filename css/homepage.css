@@ -78,6 +78,14 @@ li a:hover { text-decoration: underline; }
   margin-bottom: 0;
 }
 
+#mc_embed_signup {
+  padding-top: 9px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0.2em;
+
+}
+
 .project p {
   margin-bottom: 0;
 }
