@@ -372,6 +372,28 @@ sup a:hover {
   font-size: 0.9em;
 }
 
+.newsletter-subscription {
+  font-family: 'Gill Sans WGL W01 Light';
+  font-size: 1.0em;
+  display: table;
+  margin: 0 auto;
+}
+
+.newsletter-subscription label, input {
+  margin-right: 10px;
+}
+
+.newsletter-subscription input {
+  font-family: 'Gill Sans WGL W01 Light';
+  font-size: 1.0em;
+}
+
+.newsletter-subscription button {
+  font-family: 'Gill Sans WGL W01 Light';
+  font-size: 1.0em;
+  padding: 0 7px;
+}
+
 @media handheld, only screen and (max-width: 767px) {
   body {
     font-family: "Gill Sans WGL W01 Light";

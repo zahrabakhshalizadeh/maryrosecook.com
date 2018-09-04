@@ -78,12 +78,20 @@ li a:hover { text-decoration: underline; }
   margin-bottom: 0;
 }
 
-#mc_embed_signup {
-  padding-top: 9px;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 0.2em;
+.newsletter-subscription {
+  font-family: 'Gill Sans WGL W01 Light';
+  font-size: 17px;
+}
 
+.newsletter-subscription input {
+  font-family: 'Gill Sans WGL W01 Light';
+  font-size: 17px;
+}
+
+.newsletter-subscription button {
+  font-family: 'Gill Sans WGL W01 Light';
+  font-size: 17px;
+  padding: 0 7px;
 }
 
 .project p {
