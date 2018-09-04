@@ -386,6 +386,7 @@ sup a:hover {
 .newsletter-subscription input {
   font-family: 'Gill Sans WGL W01 Light';
   font-size: 1.0em;
+  padding: 0 4px;
 }
 
 .newsletter-subscription button {
