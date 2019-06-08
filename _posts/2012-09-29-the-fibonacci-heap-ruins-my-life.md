@@ -18,7 +18,7 @@ Imagine you are the algorithm. You examine all the cities directly connected to 
 
 On Monday, at the Recurse Center morning check-in meeting, I blithely reported that I was going to spend the next couple of days implementing a [Fibonacci heap][5] in Clojure.
 
-I had read on the <a href='http://en.wikipedia.org/wiki/Dijkstra's_algorithm'>Dijkstra Wikipedia article</a> that two men had reduced the running time of Dijkstra by inventing the Fibonacci heap and using it for node selection. Dijkstra's algorithm still did the route planning. The Fibonacci heap just helped out by quickly finding the city to explore next.
+I had read on the [Dijkstra Wikipedia article](http://en.wikipedia.org/wiki/Dijkstra's_algorithm) that two men had reduced the running time of Dijkstra by inventing the Fibonacci heap and using it for node selection. Dijkstra's algorithm still did the route planning. The Fibonacci heap just helped out by quickly finding the city to explore next.
 
 This search is a time-consuming procedure. You must go through the list of all the unexplored cities in Britain and find the one for which you have noted the shortest distance from London. When I had implemented Dijkstra in the coffee shop, my code had just gone through the whole list and returned the one with the shortest distance. This was slow.
 
