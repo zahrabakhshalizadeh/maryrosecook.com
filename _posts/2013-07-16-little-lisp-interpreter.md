@@ -260,7 +260,7 @@ Because `input` is an array and `context` is defined, lines 4-5 are run and `int
 
 ```javascript
 var interpretList = function(input, context) {
-  if (input.length > 0 &#038;&#038; input[0].value in special) {
+  if (input.length > 0 && input[0].value in special) {
     return special[input[0].value](input, context);
   } else {
     var list = input.map(function(x) { return interpret(x, context); });
@@ -331,7 +331,7 @@ Line 6 of `interpretList()` runs and finds that the first element of `list` is a
 
 ```javascript
 var interpretList = function(input, context) {
-  if (input.length > 0 &#038;&#038; input[0].value in special) {
+  if (input.length > 0 && input[0].value in special) {
     return special[input[0].value](input, context);
   } else {
     var list = input.map(function(x) { return interpret(x, context); });
